@@ -17,9 +17,9 @@ const navLinks = [
 ];
 
 const fullscreenLinks = [
-  { name: "Home Sanctuary", href: "/" },
+  { name: "Home", href: "/" },
   { name: "Our Philosophy & Heritage", href: "/about" },
-  { name: "Suites & Pavilions", href: "/rooms" },
+  { name: "Suites & Rooms", href: "/rooms" },
   { name: "Curated Experiences", href: "/experiences" },
   { name: "Culinary Hearth & Omakase", href: "/dining" },
   { name: "Subterranean Spa & Wellness", href: "/spa" },
@@ -48,10 +48,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex flex-col items-start z-50">
             <span className="text-xl lg:text-2xl font-light tracking-[0.3em] text-neutral-900 uppercase">
-              A M A N
+              S T A Y
             </span>
             <span className="text-[9px] tracking-[0.5em] text-red-500 uppercase mt-0.5 ml-0.5">
-              SANCTUARY
+              C A S A  I N N
             </span>
           </Link>
 
@@ -129,11 +129,11 @@ export default function Header() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3 text-neutral-400">
                     <Phone className="w-4 h-4 text-red-500" />
-                    <span className="text-sm tracking-wider">+1 800 AMAN SANCTUARY</span>
+                    <span className="text-sm tracking-wider">+1 800 STAY CASA</span>
                   </div>
                   <div className="flex items-center space-x-3 text-neutral-400">
                     <Calendar className="w-4 h-4 text-red-500" />
-                    <span className="text-sm tracking-wider">concierge@amansanctuary.com</span>
+                    <span className="text-sm tracking-wider">concierge@hotelstaycasainn.com</span>
                   </div>
                   <div className="pt-4">
                     <button
@@ -187,7 +187,7 @@ export default function Header() {
 
             {/* Bottom Section */}
             <div className="w-full max-w-7xl mx-auto border-t border-neutral-800 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-500 tracking-widest uppercase">
-              <span>© {new Date().getFullYear()} AMAN SANCTUARY RESORTS. ALL RIGHTS RESERVED.</span>
+              <span>© {new Date().getFullYear()} HOTEL STAY CASA INN. ALL RIGHTS RESERVED.</span>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                 <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>

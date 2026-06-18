@@ -38,10 +38,10 @@ const venues = [
     description: "Perched directly on the volcanic cliff edge with 180° unobstructed ocean views. The most photographed ceremony location on the Atlantic coast.",
   },
   {
-    name: "The Grand Pavilion Ballroom",
+    name: "The Grand Ballroom",
     capacity: "Up to 200 guests",
     image: "https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80&w=1200",
-    description: "An expansive glass-walled pavilion featuring retractable panels that open to the ocean terrace. Accommodates seated dinners, cocktail receptions, and keynote events.",
+    description: "An expansive glass-walled venue featuring retractable panels that open to the ocean terrace. Accommodates seated dinners, cocktail receptions, and keynote events.",
   },
   {
     name: "The Subterranean Banquet Cave",
@@ -80,7 +80,7 @@ export default function EventsPage() {
       {/* Why Choose Us */}
       <section className="py-24 px-6 bg-[#FCFCFF]">
         <div className="max-w-7xl mx-auto">
-          <SectionHeading tag="Our Promise" title="Why Choose The Sanctuary" />
+          <SectionHeading tag="Our Promise" title="Why Choose Stay Casa Inn" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
             {whyUsFeatures.map((feat, i) => (
               <ScrollReveal key={feat.title} delay={i * 0.1}>

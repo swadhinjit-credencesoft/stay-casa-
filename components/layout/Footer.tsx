@@ -22,14 +22,14 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="flex flex-col items-start">
               <span className="text-2xl font-light tracking-[0.3em] uppercase">
-                A M A N
+                S T A Y
               </span>
               <span className="text-[10px] tracking-[0.5em] text-red-500 uppercase mt-0.5 ml-0.5">
-                SANCTUARY
+                C A S A  I N N
               </span>
             </Link>
             <p className="text-neutral-400 font-light leading-relaxed max-w-sm">
-              Nestled in the remote volcanic cliffs of the Atlantic coast, the Aman Sanctuary is a refuge designed for absolute tranquility. Our architecture honors the raw geography while offering sanctuary to the weary spirit.
+              Nestled in the stunning coastal landscape, Hotel Stay Casa Inn offers a perfect blend of comfort and elegance. Our architecture honors the natural beauty while providing a warm and welcoming environment for every guest.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-500 transition-colors rounded-full" aria-label="Instagram">
@@ -50,7 +50,7 @@ export default function Footer() {
               Explore
             </h4>
             <ul className="space-y-3 font-light text-neutral-400">
-              <li><Link href="/rooms" className="hover:text-white transition-colors">Suites & Pavilions</Link></li>
+              <li><Link href="/rooms" className="hover:text-white transition-colors">Suites & Rooms</Link></li>
               <li><Link href="/experiences" className="hover:text-white transition-colors">Experiences</Link></li>
               <li><Link href="/dining" className="hover:text-white transition-colors">Culinary Hearth</Link></li>
               <li><Link href="/spa" className="hover:text-white transition-colors">Wellness Rituals</Link></li>
@@ -61,7 +61,7 @@ export default function Footer() {
           {/* Core Info */}
           <div className="lg:col-span-3 space-y-6">
             <h4 className="text-xs font-semibold tracking-[0.3em] text-red-500 uppercase">
-              Sanctuary Concierge
+              Concierge
             </h4>
             <ul className="space-y-4 font-light text-neutral-400">
               <li className="flex items-start space-x-3">
@@ -70,11 +70,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-neutral-500 shrink-0" />
-                <span>+1 800 AMAN SANCTUARY</span>
+                <span>+1 800 STAY CASA</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-neutral-500 shrink-0" />
-                <span>reservations@amansanctuary.com</span>
+                <span>reservations@hotelstaycasainn.com</span>
               </li>
             </ul>
           </div>
@@ -107,7 +107,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-neutral-800 pt-8 mt-4 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-500 tracking-widest uppercase">
-          <span>© {new Date().getFullYear()} AMAN SANCTUARY RESORTS. ALL RIGHTS RESERVED.</span>
+          <span>© {new Date().getFullYear()} HOTEL STAY CASA INN. ALL RIGHTS RESERVED.</span>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>

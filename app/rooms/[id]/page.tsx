@@ -85,7 +85,7 @@ export default async function RoomDetailPage({ params }: Props) {
 
               {/* Description */}
               <div>
-                <h2 className="text-2xl font-light text-neutral-900 mb-4">About This Pavilion</h2>
+                <h2 className="text-2xl font-light text-neutral-900 mb-4">About This Suite</h2>
                 <p className="text-neutral-500 font-light leading-relaxed text-base">{room.description}</p>
               </div>
 
@@ -109,7 +109,7 @@ export default async function RoomDetailPage({ params }: Props) {
 
               {/* Amenities */}
               <div>
-                <h3 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-5">Pavilion Amenities</h3>
+                <h3 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-5">Suite Amenities</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                   {room.amenities.map((a) => (
                     <div key={a} className="flex items-start gap-3">

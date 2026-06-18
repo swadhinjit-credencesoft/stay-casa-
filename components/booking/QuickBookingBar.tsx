@@ -90,7 +90,7 @@ export default function QuickBookingBar() {
                     Select Your Dates
                   </h3>
                   <p className="text-2xl font-light text-neutral-900 tracking-wide mt-1">
-                    Begin Your Sanctuary Journey
+                    Plan Your Perfect Stay
                   </p>
                 </div>
 

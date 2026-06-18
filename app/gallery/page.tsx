@@ -33,7 +33,7 @@ export default function GalleryPage() {
         <div className="relative z-10 max-w-4xl mx-auto">
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">Visual Stories</span>
           <h1 className="text-5xl md:text-7xl font-light text-white leading-tight">The Gallery</h1>
-          <p className="text-neutral-400 font-light mt-4 max-w-xl mx-auto">Curated visual memories of the Aman Sanctuary experience.</p>
+          <p className="text-neutral-400 font-light mt-4 max-w-xl mx-auto">Curated visual memories of the Hotel Stay Casa Inn experience.</p>
         </div>
       </section>
 

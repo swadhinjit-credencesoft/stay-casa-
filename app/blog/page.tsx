@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/motion/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "The Resort Journal – Stories, Design & Wellness",
-  description: "Explore the Aman Sanctuary editorial: architecture, wellness science, culinary philosophy, and travel stories.",
+  description: "Explore the Hotel Stay Casa Inn editorial: architecture, wellness science, culinary philosophy, and travel stories.",
 };
 
 export default function BlogPage() {
@@ -22,7 +22,7 @@ export default function BlogPage() {
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">Editorial</span>
           <h1 className="text-5xl md:text-7xl font-light text-white leading-tight">The Resort Journal</h1>
           <p className="text-neutral-400 font-light mt-5 max-w-xl mx-auto text-lg">
-            Architecture, wellness science, culinary philosophy, and the stories that define our sanctuary.
+            Architecture, wellness science, culinary philosophy, and the stories that define our hotel.
           </p>
         </div>
       </section>

@@ -6,8 +6,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Exclusive Sanctuary Packages & Offers",
-  description: "Discover seasonal, honeymoon, family, and corporate packages at the Aman Sanctuary Resort.",
+  title: "Exclusive Packages & Offers",
+  description: "Discover seasonal, honeymoon, family, and corporate packages at Hotel Stay Casa Inn.",
 };
 
 export default function OffersPage() {
@@ -20,7 +20,7 @@ export default function OffersPage() {
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">Curated Packages</span>
           <h1 className="text-5xl md:text-7xl font-light text-white leading-tight">Exclusive Offers</h1>
           <p className="text-neutral-400 font-light mt-5 max-w-2xl mx-auto text-lg">
-            Carefully crafted packages designed to elevate your sanctuary experience.
+            Carefully crafted packages designed to elevate your stay.
           </p>
         </div>
       </section>

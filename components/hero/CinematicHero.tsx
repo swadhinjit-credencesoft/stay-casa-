@@ -56,7 +56,7 @@ export default function CinematicHero() {
       >
         <img
           src="/DSC_3842-HDR.jpg.avif"
-          alt="Aman Sanctuary aerial view"
+          alt="Hotel Stay Casa Inn aerial view"
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -91,10 +91,10 @@ export default function CinematicHero() {
           variants={fadeUp}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[96px] font-light text-white leading-[0.92] tracking-tight text-balance mb-6"
         >
-          Where Silence
+          Where Comfort
           <br />
           <em className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600 not-italic">
-            Becomes
+            Meets
           </em>{" "}
           Luxury
         </motion.h1>
@@ -104,8 +104,8 @@ export default function CinematicHero() {
           variants={fadeUp}
           className="text-base sm:text-lg text-neutral-300/80 font-light max-w-xl leading-relaxed mb-12"
         >
-          Twelve private pavilions suspended above the Atlantic. Subterranean
-          sound healing caves. A culinary philosophy rooted in fire and silence.
+          Twelve private suites designed for your ultimate comfort. Relaxation
+          and wellness facilities. A culinary experience rooted in passion.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -115,7 +115,7 @@ export default function CinematicHero() {
             className="group inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)]"
           >
             <Calendar className="w-4 h-4" />
-            Reserve Your Pavilion
+            Reserve Your Suite
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
           <a

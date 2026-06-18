@@ -8,14 +8,14 @@ import ScrollReveal from "@/components/motion/ScrollReveal";
 import { CinematicHero, RoomCard } from "@/components/HomePageClient";
 
 export const metadata: Metadata = {
-  title: "Aman Sanctuary Resort – Luxury Volcanic Cove Retreat",
+  title: "Hotel Stay Casa Inn – Luxury Volcanic Cove Retreat",
   description:
-    "An ultra-luxury resort perched on volcanic Atlantic cliffs. Private ocean pavilions, subterranean sound healing, and cinematic culinary experiences.",
+    "An ultra-luxury resort perched on volcanic Atlantic cliffs. Private ocean suites, relaxation and wellness, and cinematic culinary experiences.",
 };
 
 const stats = [
   { value: "4", label: "International Awards" },
-  { value: "12", label: "Private Pavilions" },
+  { value: "12", label: "Private Suites" },
   { value: "3", label: "Signature Restaurants" },
   { value: "1989", label: "Est. Year" },
 ];
@@ -29,13 +29,13 @@ const awards = [
 
 const testimonials = [
   {
-    quote: "Absolutely transcendent. Every morning I woke to the sound of the ocean and felt the world dissolve. The Aman Sanctuary is the definition of true luxury.",
+    quote: "Absolutely transcendent. Every morning I woke to the sound of the ocean and felt the world dissolve. Hotel Stay Casa Inn is the definition of true luxury.",
     name: "Sophia Armitage",
     title: "Editor, Condé Nast Traveller",
     rating: 5,
   },
   {
-    quote: "The Sound Bath in the volcanic cave was life-changing. I've stayed at Amangiri, Amanjiwo, and every leading Aman — this rivals them all.",
+    quote: "The Sound Bath in the volcanic cave was life-changing. I've stayed at the world's finest resorts — this rivals them all.",
     name: "James Thornton",
     title: "Luxury Travel Consultant",
     rating: 5,
@@ -70,12 +70,12 @@ export default function HomePage() {
               Our Philosophy
             </span>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight mb-8">
-              Not a Hotel.{" "}
-              <em className="text-red-500 not-italic">A Sanctuary.</em>
+              More Than a Hotel.{" "}
+              <em className="text-red-500 not-italic">A Destination.</em>
             </h2>
             <p className="text-neutral-400 text-lg font-light max-w-2xl mx-auto mb-16">
-              We carved away everything that was not sanctuary. What remains is
-              twelve pavilions of absolute stillness perched above the infinite Atlantic.
+              We curated every detail for your comfort. What remains is
+              twelve suites of absolute tranquility in a stunning coastal setting.
             </p>
           </ScrollReveal>
 
@@ -98,9 +98,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <SectionHeading
-              tag="Suites & Pavilions"
+              tag="Suites & Rooms"
               title="Twelve Private Worlds"
-              subtitle="Each pavilion is a self-contained sanctuary — distinct in architecture, united in philosophy."
+              subtitle="Each suite is a self-contained retreat — distinct in character, united in quality."
             />
             <ScrollReveal direction="right">
               <Link
@@ -127,7 +127,7 @@ export default function HomePage() {
             <SectionHeading
               tag="Curated Experiences"
               title="Beyond the Ordinary"
-              subtitle="Helicopter picnics on volcanic peaks. Marine archaeology dives. Ancient sound healing. Every moment is designed to become a memory."
+              subtitle="Helicopter picnics on volcanic peaks. Marine archaeology dives. Ancient healing rituals. Every moment is designed to become a memory."
               light
             />
           </div>
@@ -170,7 +170,7 @@ export default function HomePage() {
       <section className="relative h-[70vh] overflow-hidden flex items-center justify-center">
         <img
           src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=2400"
-          alt="Aman Sanctuary infinity pool"
+          alt="Hotel Stay Casa Inn infinity pool"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-neutral-950/40" />
@@ -297,7 +297,7 @@ export default function HomePage() {
           <div className="mb-14">
             <SectionHeading
               tag="Guest Voices"
-              title="Stories of Sanctuary"
+              title="Guest Stories"
               align="center"
             />
           </div>
@@ -327,7 +327,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=2400"
-            alt="Aman Sanctuary pavilion"
+            alt="Hotel Stay Casa Inn suite"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/80 to-neutral-950/60" />
@@ -338,10 +338,10 @@ export default function HomePage() {
               Your Retreat Awaits
             </span>
             <h2 className="text-4xl md:text-6xl font-light text-white leading-tight mb-6">
-              Begin Your Sanctuary Journey
+              Begin Your Stay
             </h2>
             <p className="text-neutral-300 font-light mb-10 text-lg">
-              Twelve pavilions. Three restaurants. One subterranean cave. Infinite stillness.
+              Comfortable suites. Fine dining. Relaxation and wellness. Unforgettable hospitality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -45,16 +45,16 @@ function RoomsClient() {
               <Home className="w-3 h-3" /> Home
             </Link>
             <ChevronRight className="w-3 h-3" />
-            <span className="text-red-400">Suites & Pavilions</span>
+            <span className="text-red-400">Suites & Rooms</span>
           </nav>
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-3 block">
             Our Collection
           </span>
           <h1 className="text-4xl md:text-6xl font-light text-white leading-tight">
-            Suites & Pavilions
+            Suites & Rooms
           </h1>
           <p className="text-neutral-400 font-light mt-4 max-w-xl">
-            Each pavilion is a self-contained world — distinct in character, united by absolute tranquility.
+            Each suite is a self-contained world — distinct in character, united by exceptional comfort.
           </p>
         </div>
       </section>

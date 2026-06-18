@@ -5,14 +5,14 @@ import { Award, Leaf, Sun, Anchor } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Our Philosophy & Heritage",
-  description: "Discover the heritage, philosophy, architecture, and sustainable vision of the Aman Sanctuary Resort.",
+  description: "Discover the heritage, philosophy, architecture, and sustainable vision of Hotel Stay Casa Inn.",
 };
 
 const timeline = [
   { year: "1989", title: "The Land Acquired", description: "The founding family discovers a remote volcanic cove on the Atlantic coast — untouched, dramatic, transformative." },
-  { year: "1994", title: "First Pavilion Designed", description: "A Pritzker Prize-winning architect is commissioned. The vision: structures that emerge from the landscape, not upon it." },
+  { year: "1994", title: "First Suite Designed", description: "A renowned architect is commissioned. The vision: structures that complement the landscape, not dominate it." },
   { year: "2001", title: "Carbon Neutrality Certified", description: "Among the first luxury resorts worldwide to achieve carbon-neutral certification through solar, geothermal, and biodynamic farming." },
-  { year: "2012", title: "Subterranean Spa Opens", description: "The volcanic sound healing cave and wellness wing opens, drawing guests from across the globe for transformative experiences." },
+  { year: "2012", title: "Wellness Wing Opens", description: "The spa and wellness wing opens, drawing guests from across the globe for transformative experiences." },
   { year: "2024", title: "Global Recognition", description: "Ranked #1 Luxury Resort by Condé Nast Traveller, Forbes Five Stars, and Relais & Châteaux member." },
 ];
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">Our Story</span>
           <h1 className="text-5xl md:text-7xl font-light text-white leading-tight">Philosophy & Heritage</h1>
           <p className="text-neutral-400 font-light mt-5 max-w-2xl mx-auto text-lg">
-            Three decades of designing stillness. One volcanic cove. An uncompromising commitment to sanctuary.
+            Three decades of hospitality. One stunning location. An uncompromising commitment to comfort.
           </p>
         </div>
       </section>
@@ -51,16 +51,16 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal>
             <blockquote className="text-3xl md:text-4xl font-light text-neutral-900 leading-snug border-l-4 border-red-500 pl-8 italic">
-              "We did not build a hotel. We carved away everything that was not sanctuary."
+              "We built more than a hotel. We created a place of genuine warmth and comfort."
             </blockquote>
             <p className="text-sm text-neutral-500 mt-4 pl-8">— Édouard Voss, Founder</p>
           </ScrollReveal>
           <ScrollReveal delay={0.2} direction="right">
             <p className="text-neutral-500 font-light leading-relaxed text-base">
-              The Aman Sanctuary was conceived not as a hospitality project, but as an act of preservation. When Édouard Voss first walked the volcanic cliffs of the Atlantic cove in 1989, he was struck not by its potential for development, but by its absolute, irreplaceable silence.
+              Hotel Stay Casa Inn was born from a vision of genuine hospitality. When Édouard Voss first discovered the volcanic cliffs of the Atlantic cove in 1989, he saw not just a location, but the potential for a truly exceptional hotel experience.
             </p>
             <p className="text-neutral-500 font-light leading-relaxed text-base mt-4">
-              Over three decades, that silence has been protected. The resort hosts only twelve pavilions — each separated by sufficient land to ensure complete privacy. No meeting rooms. No conference halls. Only pavilions designed for thought, rest, and presence.
+              Over three decades, that vision has become reality. The resort hosts twelve unique suites — each thoughtfully designed for comfort and privacy. Every space is crafted for rest, relaxation, and memorable stays.
             </p>
           </ScrollReveal>
         </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
             <div className="rounded-2xl overflow-hidden h-96">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" alt="Sanctuary architecture" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" alt="Hotel architecture" className="w-full h-full object-cover" />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.2} direction="right">
@@ -126,7 +126,7 @@ export default function AboutPage() {
               Every structure on the estate uses locally-quarried basalt lava stone for its insulating thermal properties and aesthetic resonance with the volcanic landscape. Untreated sustainable teak weathers naturally into silver-grey, mirroring the weathered cliffs.
             </p>
             <p className="text-neutral-400 font-light leading-relaxed">
-              The aerodynamic pavilion profiles capture coastal breezes through central light wells, eliminating the need for heavy mechanical cooling and maintaining a natural, salt-fresh atmosphere throughout the year.
+              The aerodynamic building profiles capture coastal breezes through central light wells, eliminating the need for heavy mechanical cooling and maintaining a natural, salt-fresh atmosphere throughout the year.
             </p>
           </ScrollReveal>
         </div>
@@ -135,7 +135,7 @@ export default function AboutPage() {
       {/* Team */}
       <section className="py-24 px-6 bg-[#FCFCFF]">
         <div className="max-w-7xl mx-auto">
-          <SectionHeading tag="The People" title="Guardians of Sanctuary" align="center" />
+          <SectionHeading tag="The People" title="Our Team" align="center" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
             {team.map((member, i) => (
               <ScrollReveal key={member.name} delay={i * 0.1}>

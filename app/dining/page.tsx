@@ -40,7 +40,7 @@ export default function DiningPage() {
       <section className="relative h-[70vh] overflow-hidden flex items-end">
         <img
           src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=2400"
-          alt="Dining at Aman Sanctuary"
+          alt="Dining at Hotel Stay Casa Inn"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/30 to-transparent" />

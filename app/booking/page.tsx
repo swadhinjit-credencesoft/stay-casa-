@@ -84,7 +84,7 @@ export default function BookingPage() {
           <div className="w-16 h-16 rounded-full bg-red-600/20 border-2 border-red-500 flex items-center justify-center mx-auto mb-8">
             <Check className="w-8 h-8 text-red-400" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-light text-white mb-4">Your Sanctuary Awaits</h1>
+          <h1 className="text-4xl md:text-5xl font-light text-white mb-4">Your Stay Awaits</h1>
           <p className="text-neutral-400 font-light mb-6">
             Your reservation has been confirmed. Our concierge will reach out within 2 hours with your personalized pre-arrival itinerary.
           </p>
@@ -93,7 +93,7 @@ export default function BookingPage() {
             <p className="text-2xl font-mono font-medium text-red-400">{bookingRef}</p>
           </div>
           <Link href="/" className="inline-flex items-center gap-2 border border-white/20 text-white hover:border-red-500 px-8 py-3.5 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all">
-            Return to Resort
+            Return to Home
           </Link>
         </motion.div>
       </section>
@@ -105,7 +105,7 @@ export default function BookingPage() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-500 uppercase">Reservations</span>
-          <h1 className="text-3xl md:text-4xl font-light text-neutral-900 mt-2">Reserve Your Pavilion</h1>
+          <h1 className="text-3xl md:text-4xl font-light text-neutral-900 mt-2">Reserve Your Suite</h1>
         </div>
 
         <StepProgress currentStep={step} />

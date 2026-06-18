@@ -38,7 +38,7 @@ export default function ExperiencesPage() {
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">Beyond the Ordinary</span>
           <h1 className="text-5xl md:text-7xl font-light text-white leading-tight">Curated Experiences</h1>
           <p className="text-neutral-400 font-light mt-5 max-w-2xl mx-auto text-lg">
-            Helicopter picnics on volcanic peaks. Ancient sound healing. Marine archaeology dives. Every moment becomes a memory.
+            Helicopter picnics on volcanic peaks. Ancient healing rituals. Marine archaeology dives. Every moment becomes a memory.
           </p>
         </div>
       </section>

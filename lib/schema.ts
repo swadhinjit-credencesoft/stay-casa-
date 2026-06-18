@@ -6,10 +6,10 @@ export function getHotelSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Hotel",
-    "name": "The Aman Sanctuary Resort",
-    "description": "A luxury 4K cinematic ocean & cliffside wellness resort nestled in a volcanic cove.",
+      "name": "Hotel Stay Casa Inn",
+    "description": "A luxury hotel nestled in a stunning coastal setting with world-class amenities.",
     "url": DOMAIN,
-    "telephone": "+1-800-AMAN-SANCTUARY",
+    "telephone": "+1-800-STAY-CASA",
     "logo": `${DOMAIN}/images/logo.png`,
     "image": [
       "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
@@ -115,7 +115,7 @@ export function getArticleSchema(article: BlogArticle) {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "The Aman Sanctuary Resort",
+    "name": "Hotel Stay Casa Inn",
       "logo": {
         "@type": "ImageObject",
         "url": `${DOMAIN}/images/logo.png`

@@ -90,10 +90,10 @@ export interface GalleryItem {
 export const roomsSuites: RoomSuite[] = [
   {
     id: "suite-aman-ocean",
-    name: "The Aman Ocean Pavilion",
-    slug: "aman-ocean-pavilion",
+    name: "The Ocean Suite",
+    slug: "ocean-pavilion",
     tagline: "Panoramic views of the endless turquoise horizon.",
-    description: "Suspended gracefully over the azure waters of the bay, the Ocean Pavilion merges high-design minimalism with natural luxury. Featuring an expansive private infinity pool, a sun-drenched timber deck, and custom solid teak appointments, this pavilion offers absolute seclusion with direct, private access to the ocean shore.",
+    description: "Suspended gracefully over the azure waters of the bay, the Ocean Suite merges high-design minimalism with natural luxury. Featuring an expansive private infinity pool, a sun-drenched timber deck, and custom solid teak appointments, this suite offers absolute comfort with direct, private access to the ocean shore.",
     size: 210,
     occupancy: 3,
     price: 3200,
@@ -122,11 +122,11 @@ export const roomsSuites: RoomSuite[] = [
     view: "Ocean"
   },
   {
-    id: "suite-cliffside-sanctuary",
-    name: "Cliffside Sanctuary Villa",
-    slug: "cliffside-sanctuary-villa",
+    id: "suite-cliffside-villa",
+    name: "Cliffside Villa",
+    slug: "cliffside-villa",
     tagline: "Perched high among dramatic volcanic cliffs.",
-    description: "Designed by renowned eco-architects, the Cliffside Sanctuary integrates seamlessly into the mountain face. Featuring dry stone wall structures, structural floor-to-ceiling glass, and dual temperature-controlled plunge pools, it balances raw volcanic drama with unparalleled indoor comfort.",
+    description: "Designed with careful attention to detail, the Cliffside Villa integrates seamlessly into the mountain face. Featuring floor-to-ceiling glass, dual temperature-controlled plunge pools, and stunning views, it balances natural beauty with unparalleled comfort.",
     size: 340,
     occupancy: 4,
     price: 4800,
@@ -324,7 +324,7 @@ export const restaurants: Restaurant[] = [
   {
     id: "rest-nexa",
     name: "Nexa Botanic Garden",
-    tagline: "Zero-waste botanical dining in a glass pavilion.",
+    tagline: "Zero-waste botanical dining in a glass restaurant.",
     description: "Surrounded by exotic ferns and orchid systems, Nexa features a plant-forward, bio-dynamic menu. 80% of ingredients are harvested from the resort's greenhouse within hours of plating.",
     cuisine: "Biodynamic Plant-Forward & Seafood",
     hours: "07:00 – 16:00 (Breakfast & Lunch)",
@@ -385,18 +385,18 @@ export const spaTreatments: SpaTreatment[] = [
 
 export const offers: Offer[] = [
   {
-    id: "off-sanctuary-escape",
-    title: "The Mid-Year Sanctuary Escape",
+    id: "off-mid-year-escape",
+    title: "The Mid-Year Escape",
     category: "seasonal",
     tagline: "Extend your retreat and discover absolute rejuvenation.",
-    description: "Book four nights or more in any Pavilion or Residence and receive a complimentary fifth night, plus daily spa credits, private airport chauffeur service, and culinary tastings.",
+    description: "Book four nights or more in any Suite or Residence and receive a complimentary fifth night, plus daily spa credits, private airport chauffeur service, and culinary tastings.",
     benefits: [
       "Complimentary fifth night of stay",
       "$200 Daily Spa & Wellness treatment credit",
       "Return luxury Mercedes S-Class airport transfer",
       "Chef's custom welcome amenity in-suite"
     ],
-    promoCode: "SANCTU5",
+    promoCode: "STAYCASA5",
     validUntil: "October 31, 2026",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1200"
   },
@@ -421,13 +421,13 @@ export const offers: Offer[] = [
 export const blogArticles: BlogArticle[] = [
   {
     id: "blog-architecture",
-    title: "Designing the Intangible: The Architectural Ethos of our Pavilions",
+    title: "Designing the Intangible: The Architectural Ethos of our Suites",
     slug: "designing-the-intangible",
     category: "Architecture & Design",
     readTime: "6 Min Read",
     publishedAt: "May 24, 2026",
     summary: "Discover how the minimalist dry-stone architecture of our resort works in absolute symbiosis with volcanic terrain and local micro-climates.",
-    content: "## Nature as the Principal Architect\n\nWhen we first surveyed the volcanic cliffs of the East Bay, our objective was not to build structures that stood out against the landscape, but rather structures that emerged naturally from it. Drawing inspiration from local dry-stone masonry and ancient basalt formations, we designed the resort to harmonize with the surroundings.\n\n### The Choice of Basalt and Teak\n\nEvery raw material was chosen for durability, thermal properties, and regional history:\n- **Basalt Wallwork**: Locally quarried lava-stone insulates during hot afternoons and slowly radiates heat during cooler coastal evenings.\n- **Sustainable Teak**: Left untreated, it matures into a magnificent silver-grey hue, mirroring the weathered coastal cliffs.\n\n### Integrating the Micro-climate\n\nRather than blocking ocean breezes, the pavilions are shaped like aerodynamic sails. They draw refreshing offshore drafts through central light wells, eliminating the need for heavy mechanical cooling and offering pure, fresh air throughout the year.",
+    content: "## Nature as the Principal Architect\n\nWhen we first surveyed the volcanic cliffs of the East Bay, our objective was not to build structures that stood out against the landscape, but rather structures that emerged naturally from it. Drawing inspiration from local dry-stone masonry and ancient basalt formations, we designed the resort to harmonize with the surroundings.\n\n### The Choice of Basalt and Teak\n\nEvery raw material was chosen for durability, thermal properties, and regional history:\n- **Basalt Wallwork**: Locally quarried lava-stone insulates during hot afternoons and slowly radiates heat during cooler coastal evenings.\n- **Sustainable Teak**: Left untreated, it matures into a magnificent silver-grey hue, mirroring the weathered coastal cliffs.\n\n### Integrating the Micro-climate\n\nRather than blocking ocean breezes, the suites are shaped like aerodynamic forms. They draw refreshing offshore drafts through central light wells, eliminating the need for heavy mechanical cooling and offering pure, fresh air throughout the year.",
     author: {
       name: "Tadao Ando Studio",
       role: "Architectural Consultants",
@@ -454,8 +454,8 @@ export const blogArticles: BlogArticle[] = [
 ];
 
 export const galleryItems: GalleryItem[] = [
-  { id: "g1", title: "Sunset over the Aman Pavilion", category: "suites", mediaType: "image", url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=400" },
-  { id: "g2", title: "Subterranean sound bath sanctuary", category: "wellness", mediaType: "image", url: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400" },
+  { id: "g1", title: "Sunset over the Ocean Suite", category: "suites", mediaType: "image", url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=400" },
+  { id: "g2", title: "Subterranean sound bath experience", category: "wellness", mediaType: "image", url: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400" },
   { id: "g3", title: "Amber Woodfire Hearth main dining room", category: "dining", mediaType: "image", url: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=400" },
   { id: "g4", title: "Aerial view of our private peninsula", category: "resort", mediaType: "image", url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=400" },
   { id: "g5", title: "Destination wedding at Cliff Edge Cove", category: "events", mediaType: "image", url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=400" },

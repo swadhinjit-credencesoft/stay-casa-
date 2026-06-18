@@ -24,14 +24,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Reservations",
-    value: "+1 800 AMAN SANCTUARY",
+    value: "+1 800 STAY CASA",
     href: "tel:+18002626272",
   },
   {
     icon: Mail,
     label: "Concierge Email",
-    value: "reservations@amansanctuary.com",
-    href: "mailto:reservations@amansanctuary.com",
+    value: "reservations@hotelstaycasainn.com",
+    href: "mailto:reservations@hotelstaycasainn.com",
   },
   {
     icon: MapPin,
