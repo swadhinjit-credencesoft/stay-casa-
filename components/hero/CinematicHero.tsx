@@ -55,7 +55,7 @@ export default function CinematicHero() {
         className="absolute inset-0 w-full h-[120%] -top-[10%]"
       >
         <img
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2400"
+          src="/DSC_3842-HDR.jpg.avif"
           alt="Aman Sanctuary aerial view"
           className="w-full h-full object-cover"
         />
