@@ -8,12 +8,12 @@ interface RoomFiltersProps {
   onFilterChange: (view: string, priceMax: number, occupancy: number) => void;
 }
 
-const viewOptions = ["All", "Ocean", "Garden", "Ocean & Mountain", "Ocean & Cove"];
+const viewOptions = ["All"];
 const occupancyOptions = [0, 2, 3, 4];
 
 export default function RoomFilters({ onFilterChange }: RoomFiltersProps) {
   const [activeView, setActiveView] = useState("All");
-  const [priceMax, setPriceMax] = useState(10000);
+  const [priceMax, setPriceMax] = useState(5000);
   const [occupancy, setOccupancy] = useState(0);
 
   const handleViewChange = (view: string) => {
@@ -93,12 +93,12 @@ export default function RoomFilters({ onFilterChange }: RoomFiltersProps) {
           {/* Price Range */}
           <div className="flex flex-col gap-1.5 flex-1 min-w-[200px]">
             <span className="text-[9px] tracking-widest text-neutral-400 uppercase font-semibold">
-              Max Price: <span className="text-red-600 font-bold">${priceMax.toLocaleString()}/night</span>
+              Max Price: <span className="text-red-600 font-bold">₹{priceMax.toLocaleString("en-IN")}/night</span>
             </span>
             <input
               type="range"
               min={500}
-              max={10000}
+              max={5000}
               step={100}
               value={priceMax}
               onChange={(e) => handlePriceChange(Number(e.target.value))}

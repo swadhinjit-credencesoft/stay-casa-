@@ -10,7 +10,7 @@ import RoomFilters from "@/components/rooms/RoomFilters";
 
 function RoomsClient() {
   const [view, setView] = useState("All");
-  const [priceMax, setPriceMax] = useState(10000);
+  const [priceMax, setPriceMax] = useState(5000);
   const [occupancy, setOccupancy] = useState(0);
 
   const handleFilterChange = (v: string, p: number, o: number) => {
@@ -69,7 +69,7 @@ function RoomsClient() {
             <div className="text-center py-24">
               <p className="text-neutral-400 text-lg font-light">No suites match your current filters.</p>
               <button
-                onClick={() => handleFilterChange("All", 10000, 0)}
+                onClick={() => handleFilterChange("All", 5000, 0)}
                 className="mt-4 text-xs text-red-600 font-semibold tracking-widest uppercase underline"
               >
                 Reset Filters

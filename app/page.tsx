@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: "4", label: "International Awards" },
-  { value: "12", label: "Private Suites" },
+  { value: "28", label: "Rooms" },
   { value: "3", label: "Signature Restaurants" },
   { value: "1989", label: "Est. Year" },
 ];
@@ -99,7 +99,7 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <SectionHeading
               tag="Suites & Rooms"
-              title="Twelve Private Worlds"
+              title="Our Rooms"
               subtitle="Each suite is a self-contained retreat — distinct in character, united in quality."
             />
             <ScrollReveal direction="right">

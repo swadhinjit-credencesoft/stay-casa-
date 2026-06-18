@@ -4,7 +4,7 @@ export interface RoomSuite {
   slug: string;
   tagline: string;
   description: string;
-  size: number; // in sq meters
+  size: number; // in sq.ft
   occupancy: number; // max guests
   price: number; // per night in USD
   images: string[];
@@ -89,135 +89,100 @@ export interface GalleryItem {
 
 export const roomsSuites: RoomSuite[] = [
   {
-    id: "suite-aman-ocean",
-    name: "The Ocean Suite",
-    slug: "ocean-pavilion",
-    tagline: "Panoramic views of the endless turquoise horizon.",
-    description: "Suspended gracefully over the azure waters of the bay, the Ocean Suite merges high-design minimalism with natural luxury. Featuring an expansive private infinity pool, a sun-drenched timber deck, and custom solid teak appointments, this suite offers absolute comfort with direct, private access to the ocean shore.",
-    size: 210,
-    occupancy: 3,
-    price: 3200,
-    images: [
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
-    ],
-    amenities: [
-      "Private 15m Infinity Pool",
-      "24-Hour Dedicated Butler Service",
-      "In-Villa Spa Treatment Suite",
-      "Premium Wine Cellar & Bar",
-      "Bang & Olufsen Sound System",
-      "Outdoor Rain Shower & Sunken Tub",
-      "Hermès Bath Amenities",
-      "Complimentary Airport Transfer"
-    ],
-    features: [
-      { label: "Bed Type", value: "Custom Emperor King" },
-      { label: "View", value: "180° Panoramic Ocean View" },
-      { label: "Location", value: "East Cliff Crest" },
-      { label: "Connectivity", value: "Wi-Fi 6E & Sat-TV" }
-    ],
-    virtualTourUrl: "#virtual-tour",
-    view: "Ocean"
-  },
-  {
-    id: "suite-cliffside-villa",
-    name: "Cliffside Villa",
-    slug: "cliffside-villa",
-    tagline: "Perched high among dramatic volcanic cliffs.",
-    description: "Designed with careful attention to detail, the Cliffside Villa integrates seamlessly into the mountain face. Featuring floor-to-ceiling glass, dual temperature-controlled plunge pools, and stunning views, it balances natural beauty with unparalleled comfort.",
-    size: 340,
-    occupancy: 4,
-    price: 4800,
-    images: [
-      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&q=80&w=1200"
-    ],
-    amenities: [
-      "Dual Plunge Pools (Hot/Cold)",
-      "Wellness & Meditation Garden",
-      "Private Outdoor Kitchen & Dining Lounge",
-      "Personal Chef on Demand",
-      "Dyson Styling Amenities",
-      "Apple HomeKit Automated Control",
-      "Curated Art Collection",
-      "Charter Yacht Day Privilege"
-    ],
-    features: [
-      { label: "Bed Type", value: "Emperor King + Suite Twin" },
-      { label: "View", value: "Ocean & Mountain Sunset" },
-      { label: "Location", value: "West Face Ridge" },
-      { label: "Size", value: "340 sqm" }
-    ],
-    virtualTourUrl: "#virtual-tour",
-    view: "Ocean & Mountain"
-  },
-  {
-    id: "suite-canopy-retreat",
-    name: "Jungle Canopy Retreat",
-    slug: "jungle-canopy-retreat",
-    tagline: "Wrapped in lush, vibrant rainforest levels.",
-    description: "Elevated above the forest floor on sustainable pilotis, the Jungle Canopy Retreat places guests directly in the heart of nature. Listen to the soothing symphony of the tropical wilderness from your suspended hammocks or bathe under the stars in a hand-carved copper tub.",
-    size: 150,
+    id: "suite-deluxe",
+    name: "Deluxe Room",
+    slug: "deluxe-room",
+    tagline: "Comfort and convenience for a relaxing stay.",
+    description: "Our Deluxe Room offers a perfect blend of comfort and functionality. Featuring a spacious layout with a king-sized bed, modern amenities, and thoughtful touches throughout. Ideal for business travelers and couples seeking a comfortable stay.",
+    size: 120,
     occupancy: 2,
     price: 1800,
     images: [
-      "https://images.unsplash.com/photo-1502005229762-fc1b2b812ca5?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1200"
+      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200"
     ],
     amenities: [
-      "Wraparound Sky Deck",
-      "Hand-Carved Copper Soaking Tub",
-      "Organic In-Room Herb & Tea Bar",
-      "Binoculars & Nature Exploration Kit",
-      "Aromatherapy Diffusers with Local Oils",
-      "iPad Control Center",
-      "Locally Sourced Organic Bedding",
-      "Sunset Forest Canopy Walk Tours"
+      "Air Conditioning",
+      "Bathroom with Hot & Cold Water",
+      "Complimentary Mineral Water",
+      "Wi-Fi",
+      "Kettle",
+      "Electronic Safe",
+      "TV",
+      "Toiletries",
+      "Towels"
     ],
     features: [
-      { label: "Bed Type", value: "Organic Cotton King" },
-      { label: "View", value: "Rainforest Canopy & Ravine" },
-      { label: "Location", value: "Emerald Ridge" },
-      { label: "Acoustics", value: "Natural Jungle Soundscape" }
+      { label: "Bed Type", value: "1 King Bed" },
+      { label: "View", value: "City View" },
+      { label: "Bathrooms", value: "1 Bathroom" },
+      { label: "Size", value: "120 sq.ft" }
     ],
-    virtualTourUrl: "#virtual-tour",
-    view: "Garden"
+    view: "City"
   },
   {
-    id: "suite-royal-estuary",
-    name: "The Royal Estuary Residence",
-    slug: "royal-estuary-residence",
-    tagline: "The pinnacle of presidential luxury and discretion.",
-    description: "Our grandest residence, spanning two wings with dedicated security clearance, a private beach cove, and a three-tiered swimming pool complex. The Royal Estuary is detailed with precious Italian Calacatta marble, customized Japanese shoji walls, and museum-grade luxury artifacts.",
-    size: 780,
-    occupancy: 6,
-    price: 9500,
+    id: "suite-super-deluxe",
+    name: "Super Deluxe Room",
+    slug: "super-deluxe-room",
+    tagline: "Enhanced comfort with premium amenities.",
+    description: "The Super Deluxe Room elevates your stay with additional space and enhanced amenities. Enjoy the comfort of a king-sized bed, modern bathroom facilities, and all the essentials for a memorable stay. Perfect for those who appreciate the finer details.",
+    size: 120,
+    occupancy: 2,
+    price: 2100,
     images: [
-      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1200"
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200"
     ],
     amenities: [
-      "3-Tier Private Pool & Lagoon Access",
-      "Private Security Entrance & Staff Quarters",
-      "Teppanyaki Dining Counter & Professional Kitchen",
-      "Wellness Wing (Sauna, Steam, Gym)",
-      "Private Cinema Room (Dolby Atmos)",
-      "Valet Parking & Mercedes S-Class Chauffeur",
-      "Helipad Landing Access",
-      "Custom Yacht Charter Included"
+      "Air Conditioning",
+      "Bathroom with Hot & Cold Water",
+      "Complimentary Mineral Water",
+      "Wi-Fi",
+      "Kettle",
+      "Electronic Safe",
+      "TV",
+      "Toiletries",
+      "Towels"
     ],
     features: [
-      { label: "Bed Type", value: "3 Emperor Suites" },
-      { label: "View", value: "Panoramic Cove & Sea View" },
-      { label: "Location", value: "Private Peninsula Spit" },
-      { label: "Security", value: "High-grade biometric access" }
+      { label: "Bed Type", value: "1 King Bed" },
+      { label: "View", value: "City View" },
+      { label: "Bathrooms", value: "1 Bathroom" },
+      { label: "Size", value: "120 sq.ft" }
     ],
-    virtualTourUrl: "#virtual-tour",
-    view: "Ocean & Cove"
+    view: "City"
+  },
+  {
+    id: "suite-suite-room",
+    name: "Suite Room",
+    slug: "suite-room",
+    tagline: "Extra space and premium comfort for an elevated stay.",
+    description: "Our Suite Room offers generous living space with a separate sleeping area featuring a king-sized bed. With additional legroom, premium amenities, and thoughtful detailing, it is designed for guests who desire more space and comfort during their stay.",
+    size: 140,
+    occupancy: 2,
+    price: 2400,
+    images: [
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200"
+    ],
+    amenities: [
+      "Air Conditioning",
+      "Bathroom with Hot & Cold Water",
+      "Mineral Water (additional charge)",
+      "Wi-Fi",
+      "Kettle",
+      "Electronic Safe",
+      "TV",
+      "Toiletries",
+      "Towels"
+    ],
+    features: [
+      { label: "Bed Type", value: "1 King Bed" },
+      { label: "View", value: "City View" },
+      { label: "Bathrooms", value: "1 Bathroom" },
+      { label: "Size", value: "140 sq.ft" }
+    ],
+    view: "City"
   }
 ];
 

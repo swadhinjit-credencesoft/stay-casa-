@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-3 font-light text-neutral-400">
               <li><Link href="/rooms" className="hover:text-white transition-colors">Suites & Rooms</Link></li>
               <li><Link href="/experiences" className="hover:text-white transition-colors">Experiences</Link></li>
-              <li><Link href="/dining" className="hover:text-white transition-colors">Culinary Hearth</Link></li>
+              {/* <li><Link href="/dining" className="hover:text-white transition-colors">Culinary Hearth</Link></li> */}
               <li><Link href="/spa" className="hover:text-white transition-colors">Wellness Rituals</Link></li>
               <li><Link href="/offers" className="hover:text-white transition-colors">Seasonal Packages</Link></li>
             </ul>

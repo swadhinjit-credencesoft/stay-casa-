@@ -67,7 +67,7 @@ export function getRoomSchema(room: RoomSuite) {
     "offers": {
       "@type": "Offer",
       "price": room.price,
-      "priceCurrency": "USD",
+      "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2027-12-31"
     },

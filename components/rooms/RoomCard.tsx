@@ -44,7 +44,7 @@ export default function RoomCard({ room, index = 0 }: RoomCardProps) {
         <div className="flex items-center gap-4 mb-5">
           <div className="flex items-center gap-1.5 text-xs text-neutral-500">
             <Maximize2 className="w-3.5 h-3.5 text-red-400" />
-            <span>{room.size} sqm</span>
+            <span>{room.size} sq.ft</span>
           </div>
           <div className="w-px h-3.5 bg-neutral-200" />
           <div className="flex items-center gap-1.5 text-xs text-neutral-500">

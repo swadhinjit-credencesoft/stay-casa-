@@ -55,7 +55,7 @@ export default async function RoomDetailPage({ params }: Props) {
             <ArrowLeft className="w-3.5 h-3.5" /> Back to Suites
           </Link>
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-2 block">
-            {room.view} View · {room.size} sqm
+            {room.view} View · {room.size} sq.ft
           </span>
           <h1 className="text-4xl md:text-6xl font-light text-white leading-tight">
             {room.name}
@@ -94,7 +94,7 @@ export default async function RoomDetailPage({ params }: Props) {
                 <h3 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-5">Suite Specifications</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
-                    { icon: Maximize2, label: "Size", value: `${room.size} sqm` },
+                    { icon: Maximize2, label: "Size", value: `${room.size} sq.ft` },
                     { icon: Users, label: "Capacity", value: `${room.occupancy} guests` },
                     { icon: null, label: "View", value: room.view },
                     { icon: null, label: "Bed", value: room.features.find(f => f.label === "Bed Type")?.value || "King" },

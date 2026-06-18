@@ -9,11 +9,13 @@ import { cn } from "@/lib/utils";
 import { useUiStore } from "@/store/useUiStore";
 
 const navLinks = [
-  { name: "Suites", href: "/rooms" },
+  { name: "Rooms", href: "/rooms" },
   { name: "Experiences", href: "/experiences" },
-  { name: "Dining", href: "/dining" },
-  { name: "Spa & Wellness", href: "/spa" },
-  { name: "Offers", href: "/offers" },
+  // { name: "Dining", href: "/dining" },
+  { name: "events", href: "/events" },
+  { name: "gallery", href: "/gallery" },
+  { name: "about", href: "/about" },
+   { name: "contact", href: "/contact" },
 ];
 
 const fullscreenLinks = [
@@ -21,7 +23,7 @@ const fullscreenLinks = [
   { name: "Our Philosophy & Heritage", href: "/about" },
   { name: "Suites & Rooms", href: "/rooms" },
   { name: "Curated Experiences", href: "/experiences" },
-  { name: "Culinary Hearth & Omakase", href: "/dining" },
+  // { name: "Culinary Hearth & Omakase", href: "/dining" },
   { name: "Subterranean Spa & Wellness", href: "/spa" },
   { name: "Visual Media Gallery", href: "/gallery" },
   { name: "Weddings & Celebrations", href: "/events" },
