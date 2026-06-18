@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luxury-resort-cinematic.vercel.app/sitemap.xml

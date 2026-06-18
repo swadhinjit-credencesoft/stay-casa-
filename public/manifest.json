@@ -1,0 +1,16 @@
+{
+  "name": "Aman Sanctuary Resort",
+  "short_name": "Aman Sanctuary",
+  "description": "Ultra-luxury resort perched on volcanic Atlantic cliffs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a12",
+  "theme_color": "#EF4444",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
