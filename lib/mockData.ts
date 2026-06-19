@@ -188,67 +188,67 @@ export const roomsSuites: RoomSuite[] = [
 
 export const experiences: Experience[] = [
   {
-    id: "exp-sound-bath",
-    title: "Vibrational Sound Bath & Meditation",
-    category: "wellness",
-    tagline: "Restore cognitive harmony in our volcanic cavern.",
-    description: "Harness the acoustics of our volcanic rock chamber as master practitioners play quartz crystal singing bowls and therapeutic gongs, guiding you into deep meditative states.",
-    duration: "90 Minutes",
-    price: "$250 / guest",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
+    id: "exp-city-tour",
+    title: "Jaipur City Heritage Tour",
+    category: "culture",
+    tagline: "Explore the Pink City with our expert guides.",
+    description: "Discover the rich history and vibrant culture of Jaipur with our curated heritage tour. Visit the magnificent Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar while learning about the city's royal legacy.",
+    duration: "Full Day",
+    price: "₹1,500 / guest",
+    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200",
     details: [
-      "Acoustically optimized lava-stone cave",
-      "Custom crystal singing bowls attuned to natural frequencies",
-      "Includes organic adaptogenic elixirs post-treatment",
-      "Limited to 4 participants per session for maximum privacy"
+      "Expert English-speaking guide",
+      "Private air-conditioned vehicle",
+      "Entry fees to all monuments included",
+      "Traditional Rajasthani lunch at a heritage restaurant"
     ]
   },
   {
-    id: "exp-marine-safari",
-    title: "Private Reef Marine Archeology Safari",
-    category: "adventure",
-    tagline: "Explore ancient underwater ruins with our resident marine biologist.",
-    description: "Submerge into our secluded house reef to document ancient shipwrecks and active coral restoration sites using state-of-the-art sea scooters.",
-    duration: "Half Day",
-    price: "$850 / boat",
-    image: "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&q=80&w=1200",
-    details: [
-      "Guided by professional marine archeologist",
-      "High-speed Seabob propulsion rentals included",
-      "Underwater 4K photography and high-def video log",
-      "Gourmet champagne lunch box served aboard our custom yacht"
-    ]
-  },
-  {
-    id: "exp-heli-dining",
-    title: "Helicopter Peak Picnic & Tasting",
+    id: "exp-local-food",
+    title: "Rajasthani Food Tasting Walk",
     category: "dining",
-    tagline: "Dine on a glacier peak or volcano summit.",
-    description: "Ascend via private Airbus helicopter to the highest peak overlooking the archipelago, where our culinary director prepares a fire-cooked local degustation menu.",
-    duration: "4 Hours",
-    price: "$2,400 / couple",
+    tagline: "Taste the authentic flavors of Rajasthan.",
+    description: "Embark on a culinary journey through the streets of Jaipur. Sample local delicacies like dal baati churma, gatte ki sabzi, pyaaz kachori, and laal maas at beloved local eateries.",
+    duration: "3 Hours",
+    price: "₹800 / guest",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1200",
     details: [
-      "Chartered private flight with scenic flyby",
-      "Live cooking by personal Michelin-starred chef",
-      "Rare wine pairings curated by our lead sommelier",
-      "Custom cashmere blankets and warming pods provided"
+      "Walk through historic food lanes of old Jaipur",
+      "Taste 10+ local street food specialties",
+      "Meet local artisans and shopkeepers",
+      "Includes refreshments and bottled water"
     ]
   },
   {
-    id: "exp-indigo-dyeing",
-    title: "Heritage Indigo Dyeing Workshop",
+    id: "exp-ayurveda",
+    title: "Ayurvedic Wellness Session",
+    category: "wellness",
+    tagline: "Restore balance with ancient Ayurvedic therapies.",
+    description: "Rejuvenate your mind and body with a personalized Ayurvedic consultation and treatment. Our experienced therapists recommend traditional oil massages, herbal steam baths, and relaxation techniques tailored to your dosha.",
+    duration: "60 Minutes",
+    price: "₹1,200 / session",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200",
+    details: [
+      "Personalized dosha consultation",
+      "Traditional Abhyanga oil massage",
+      "Herbal steam bath therapy",
+      "Post-treatment herbal tea and nutrition advice"
+    ]
+  },
+  {
+    id: "exp-handicraft",
+    title: "Handicraft & Block Printing Workshop",
     category: "culture",
-    tagline: "Learn the secrets of organic pigment extraction.",
-    description: "Engage with local masters who preserve century-old natural dyeing methodologies. Extract rich pigments from indigo plants grown in the resort's estate garden.",
-    duration: "3 Hours",
-    price: "$180 / guest",
+    tagline: "Learn Jaipur's traditional crafts from master artisans.",
+    description: "Visit local artisan workshops to witness the intricate art of hand block printing, blue pottery, and gemstone cutting. Try your hand at block printing on fabric and create your own souvenir to take home.",
+    duration: "Half Day",
+    price: "₹600 / guest",
     image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=1200",
     details: [
-      "Private lesson in an open-air timber studio",
-      "Harvest your own plant leaves from the organic farm",
-      "Design and dye a bespoke silk scarf to take home",
-      "Traditional herbal tea tasting included"
+      "Live demonstration by master craftsmen",
+      "Hands-on block printing session",
+      "Explore blue pottery and gemstone workshops",
+      "Take home your custom-printed fabric piece"
     ]
   }
 ];

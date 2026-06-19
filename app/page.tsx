@@ -125,9 +125,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="mb-14">
             <SectionHeading
-              tag="Curated Experiences"
-              title="Beyond the Ordinary"
-              subtitle="Helicopter picnics on volcanic peaks. Marine archaeology dives. Ancient healing rituals. Every moment is designed to become a memory."
+              tag="Explore Jaipur"
+              title="Curated Experiences"
+              subtitle="Discover the vibrant culture, heritage, and flavors of Jaipur through our handpicked local experiences."
               light
             />
           </div>
