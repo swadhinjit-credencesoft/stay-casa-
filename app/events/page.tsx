@@ -54,7 +54,7 @@ export default function EventsPage() {
       {/* Hero */}
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden flex items-end">
         <img
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000"
+          src="/DSC_3833-HDR.jpg.avif"
           alt="Events at Stay Casa Inn"
           className="absolute inset-0 w-full h-full object-cover"
         />

@@ -98,8 +98,8 @@ export const roomsSuites: RoomSuite[] = [
     occupancy: 2,
     price: 1800,
     images: [
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200"
+      "/DSC_3793.JPG.avif",
+      "/DSC_3793.JPG.avif"
     ],
     amenities: [
       "Air Conditioning",
@@ -130,8 +130,8 @@ export const roomsSuites: RoomSuite[] = [
     occupancy: 2,
     price: 2100,
     images: [
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200"
+      "/DSC_3745.avif",
+      "/DSC_3742.avif"
     ],
     amenities: [
       "Air Conditioning",
@@ -162,8 +162,8 @@ export const roomsSuites: RoomSuite[] = [
     occupancy: 2,
     price: 2400,
     images: [
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200"
+      "/DSC_3721.avif",
+      "/DSC_3709.avif"
     ],
     amenities: [
       "Air Conditioning",

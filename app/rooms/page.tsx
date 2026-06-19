@@ -29,14 +29,14 @@ function RoomsClient() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative bg-neutral-950 pt-32 pb-20 px-6 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=2000"
             alt="Resort suites"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/60 to-neutral-950" />
+          <div className="absolute inset-0 bg-neutral-950/60" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto">
           {/* Breadcrumb */}

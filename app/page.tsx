@@ -1,49 +1,49 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Star, Award, Leaf, Waves } from "lucide-react";
-import { roomsSuites, experiences, restaurants, spaTreatments, offers } from "@/lib/mockData";
+import { ArrowRight, Star, Award, MapPin, Calendar, Building2 } from "lucide-react";
+import { roomsSuites } from "@/lib/mockData";
 import { getHotelSchema } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import { CinematicHero, RoomCard } from "@/components/HomePageClient";
 
 export const metadata: Metadata = {
-  title: "Hotel Stay Casa Inn – Luxury Volcanic Cove Retreat",
+  title: "Hotel Stay Casa Inn – Comfortable Stay in Jaipur",
   description:
-    "An ultra-luxury resort perched on volcanic Atlantic cliffs. Private ocean suites, relaxation and wellness, and cinematic culinary experiences.",
+    "Experience comfort, warm hospitality, and modern amenities at Stay Casa Inn Jaipur. Well-furnished rooms, free Wi-Fi, and a prime location in Sodala.",
 };
 
 const stats = [
-  { value: "4", label: "International Awards" },
-  { value: "28", label: "Rooms" },
-  { value: "3", label: "Signature Restaurants" },
-  { value: "1989", label: "Est. Year" },
+  { value: "24/7", label: "Guest Assistance" },
+  { value: "Comfortable", label: "Well-Furnished Rooms" },
+  { value: "Free", label: "High-Speed Wi-Fi" },
+  { value: "Prime", label: "Location in Jaipur" },
 ];
 
 const awards = [
-  "Condé Nast Traveller – Top 10 World",
-  "Forbes Five Star",
-  "Relais & Châteaux",
-  "Andrew Harper – Hidden Gem",
+  "Clean & Comfortable Rooms",
+  "Friendly Hospitality",
+  "Prime Jaipur Location",
+  "Great Value for Money",
 ];
 
 const testimonials = [
   {
-    quote: "Absolutely transcendent. Every morning I woke to the sound of the ocean and felt the world dissolve. Hotel Stay Casa Inn is the definition of true luxury.",
-    name: "Sophia Armitage",
-    title: "Editor, Condé Nast Traveller",
+    quote: "Comfortable rooms, excellent service, and a great location. The staff was extremely helpful throughout our stay. Highly recommended.",
+    name: "Priya Sharma",
+    title: "Business Traveler",
     rating: 5,
   },
   {
-    quote: "The Sound Bath in the volcanic cave was life-changing. I've stayed at the world's finest resorts — this rivals them all.",
-    name: "James Thornton",
-    title: "Luxury Travel Consultant",
+    quote: "Clean rooms, peaceful environment, and excellent value for money. The complimentary Wi-Fi was fast and reliable. Will definitely stay again.",
+    name: "Rahul Verma",
+    title: "Family Vacationer",
     rating: 5,
   },
   {
-    quote: "Chef Kenji's omakase at Shio is a religious experience. Paired with the cliffside view — nothing in the world compares.",
-    name: "Mei-Ling Xiu",
-    title: "Michelin Guide Contributor",
+    quote: "A wonderful experience with warm hospitality and modern facilities. The staff went above and beyond to make our stay comfortable and memorable.",
+    name: "Anita Desai",
+    title: "Couple Traveler",
     rating: 5,
   },
 ];
@@ -66,48 +66,107 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#EF4444_1px,transparent_1px)] [background-size:28px_28px]" />
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <ScrollReveal>
-            <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">
-              Our Philosophy
-            </span>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight mb-8">
-              More Than a Hotel.{" "}
-              <em className="text-red-500 not-italic">A Destination.</em>
+              More Than a Stay.{" "}
+              <em className="text-red-500 not-italic">A Place to Feel at Home.</em>
             </h2>
-            <p className="text-neutral-400 text-lg font-light max-w-2xl mx-auto mb-16">
-              We curated every detail for your comfort. What remains is
-              twelve suites of absolute tranquility in a stunning coastal setting.
+            <p className="text-neutral-400 text-lg font-light max-w-3xl mx-auto mb-16">
+              At Stay Casa Inn, every detail is thoughtfully designed to provide comfort, convenience, and genuine hospitality. Whether you&apos;re visiting Jaipur for business or leisure, enjoy a peaceful and relaxing experience in a welcoming environment.
             </p>
           </ScrollReveal>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-800/50 border border-neutral-800/50 rounded-sm overflow-hidden">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-800/50 border border-neutral-800/50 rounded-sm overflow-hidden mb-14">
             {stats.map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.1}>
                 <div className="bg-neutral-950 px-6 py-8 text-center">
-                  <div className="text-4xl md:text-5xl font-light text-white mb-2">{s.value}</div>
+                  <div className="text-2xl md:text-3xl font-light text-white mb-2">{s.value}</div>
                   <div className="text-[10px] tracking-widest text-neutral-500 uppercase font-medium">{s.label}</div>
                 </div>
               </ScrollReveal>
             ))}
           </div>
+
+          <ScrollReveal>
+            <p className="text-neutral-500 text-sm font-light max-w-2xl mx-auto tracking-wide">
+              Providing memorable hospitality experiences with comfort, affordability, and personalized service for every traveler.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* 3. FEATURED SUITES */}
+      {/* 3. ABOUT US */}
+      <section className="py-24 px-6 bg-[#FCFCFF]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <ScrollReveal>
+              <div className="space-y-6">
+                <span className="text-[10px] font-semibold tracking-[0.4em] text-red-500 uppercase">About Stay Casa Inn</span>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-neutral-900 leading-tight tracking-tight">
+                  Your Comfortable Home Away from Home
+                </h2>
+                <p className="text-neutral-500 font-light leading-relaxed">
+                  Welcome to Stay Casa Inn, a welcoming haven in the heart of Jaipur. Situated on New Sanganer Road in
+                  Sodala, our hotel blends modern comfort with warm Rajasthani hospitality. Whether visiting for business
+                  or leisure, we ensure a peaceful and relaxing stay with thoughtfully designed rooms, essential amenities,
+                  and personalized service.
+                </p>
+                <div className="flex flex-wrap gap-6 pt-2">
+                  <div className="flex items-start gap-3">
+                    <Building2 className="w-5 h-5 text-red-500 mt-0.5 shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-neutral-800">Mission</p>
+                      <p className="text-xs text-neutral-500">To provide every guest with a comfortable, clean, and welcoming stay at affordable rates.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Star className="w-5 h-5 text-red-500 mt-0.5 shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-neutral-800">Vision</p>
+                      <p className="text-xs text-neutral-500">To be the preferred choice for travelers seeking comfort and genuine hospitality in Jaipur.</p>
+                    </div>
+                  </div>
+                </div>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-red-600 hover:text-red-700 border-b border-red-200 hover:border-red-600 pb-1 transition-all mt-4"
+                >
+                  Learn More About Us <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <div className="relative">
+                <img
+                  src="/home2.jpeg"
+                  alt="Stay Casa Inn Jaipur"
+                  className="rounded-2xl shadow-depth-xl w-full h-[400px] object-cover"
+                />
+                <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-soft-premium px-6 py-4 hidden md:block">
+                  <p className="text-2xl font-light text-neutral-900">R-3-50 North Part</p>
+                  <p className="text-xs text-neutral-500">Indraprasth Colony, Sodala</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. FEATURED SUITES */}
       <section className="py-24 px-6 bg-[#FCFCFF]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <SectionHeading
               tag="Suites & Rooms"
               title="Our Rooms"
-              subtitle="Each suite is a self-contained retreat — distinct in character, united in quality."
+              subtitle="Each room is thoughtfully designed for comfort and relaxation — distinct in character, united in quality."
             />
             <ScrollReveal direction="right">
               <Link
                 href="/rooms"
                 className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-red-600 hover:text-red-700 border-b border-red-200 hover:border-red-600 pb-1 transition-all shrink-0"
               >
-                View All Suites <ArrowRight className="w-3.5 h-3.5" />
+                View All Rooms <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </ScrollReveal>
           </div>
@@ -119,122 +178,146 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. EXPERIENCES */}
+      {/* 5. GUEST EXPERIENCE */}
       <section className="py-24 px-6 bg-neutral-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(239,68,68,0.06)_0%,transparent_70%)]" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="mb-14">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <SectionHeading
-              tag="Explore Jaipur"
-              title="Curated Experiences"
-              subtitle="Discover the vibrant culture, heritage, and flavors of Jaipur through our handpicked local experiences."
+              tag="Guest Experience"
+              title="Comfort, Convenience &amp; Hospitality"
+              subtitle="Experience warm Rajasthani hospitality, clean and spacious rooms, and personalized service at Stay Casa Inn Jaipur."
               light
             />
+            <ScrollReveal direction="right">
+              <Link
+                href="/experiences"
+                className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-red-400 hover:text-red-300 border-b border-red-800/50 hover:border-red-400 pb-1 transition-all shrink-0"
+              >
+                Learn More <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </ScrollReveal>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {experiences.slice(0, 4).map((exp, i) => (
-              <ScrollReveal key={exp.id} delay={i * 0.1}>
-                <div className="group relative overflow-hidden rounded-2xl h-72 cursor-pointer">
-                  <img
-                    src={exp.image}
-                    alt={exp.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent" />
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                    <span className="text-[9px] font-bold tracking-widest uppercase text-red-400 mb-2 bg-red-950/40 border border-red-500/20 px-2 py-1 rounded-full inline-block self-start">
-                      {exp.category}
-                    </span>
-                    <h3 className="text-xl font-light text-white mb-1">{exp.title}</h3>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-neutral-300">{exp.duration}</span>
-                      {exp.price && <span className="text-xs text-red-400 font-medium">{exp.price}</span>}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link
-              href="/experiences"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-red-500 text-white hover:text-red-400 px-8 py-3.5 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300"
-            >
-              All Experiences <ArrowRight className="w-4 h-4" />
-            </Link>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ScrollReveal>
+              <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 h-full">
+                <span className="text-[9px] font-bold tracking-widest uppercase text-red-400 mb-3 block">Prime Location</span>
+                <h3 className="text-lg font-light text-white mb-2">Conveniently Situated</h3>
+                <p className="text-neutral-400 text-sm font-light leading-relaxed">
+                  Located on New Sanganer Road in Sodala, Jaipur — close to major attractions, shopping centers, and business hubs.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 h-full">
+                <span className="text-[9px] font-bold tracking-widest uppercase text-red-400 mb-3 block">Clean &amp; Comfortable</span>
+                <h3 className="text-lg font-light text-white mb-2">Well-Equipped Rooms</h3>
+                <p className="text-neutral-400 text-sm font-light leading-relaxed">
+                  Thoughtfully designed rooms with comfortable bedding, air conditioning, free Wi-Fi, Smart TV, and daily housekeeping.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 h-full">
+                <span className="text-[9px] font-bold tracking-widest uppercase text-red-400 mb-3 block">Warm Hospitality</span>
+                <h3 className="text-lg font-light text-white mb-2">Personalized Service</h3>
+                <p className="text-neutral-400 text-sm font-light leading-relaxed">
+                  Our dedicated team delivers warm Rajasthani hospitality with 24-hour front desk assistance and room service.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* 5. INFINITY POOL SHOWCASE */}
+      {/* 6. LOCATION */}
       <section className="relative h-[70vh] overflow-hidden flex items-center justify-center">
         <img
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=2400"
-          alt="Hotel Stay Casa Inn infinity pool"
+          src="/DSC_3817.JPG.avif"
+          alt="Stay Casa Inn Jaipur"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-neutral-950/40" />
-        <div className="relative z-10 text-center px-6">
+        <div className="absolute inset-0 bg-neutral-950/50" />
+        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <ScrollReveal>
-            <span className="text-[10px] font-semibold tracking-[0.4em] text-red-300 uppercase mb-3 block">The Crown Jewel</span>
-            <h2 className="text-5xl md:text-7xl font-light text-white tracking-tight">The Infinity Edge</h2>
-            <p className="text-neutral-200/70 mt-4 font-light max-w-md mx-auto">
-              Sixty meters of still water suspended above the Atlantic. Where the pool meets the horizon.
+            <MapPin className="w-8 h-8 text-red-400 mx-auto mb-4" />
+            <span className="text-[10px] font-semibold tracking-[0.4em] text-red-300 uppercase mb-3 block">Prime Location</span>
+            <h2 className="text-5xl md:text-7xl font-light text-white tracking-tight">Your Home in Jaipur</h2>
+            <p className="text-neutral-200/70 mt-4 font-light max-w-lg mx-auto">
+              Conveniently situated on New Sanganer Road in Sodala — close to Jaipur International Airport, railway station, shopping centers, and major attractions.
             </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm">
+              <div className="text-center">
+                <p className="text-2xl font-light text-white">R-3-50</p>
+                <p className="text-[10px] tracking-widest text-neutral-400 uppercase">North Part</p>
+              </div>
+              <div className="text-center">
+                <p className="text-2xl font-light text-white">Indraprasth</p>
+                <p className="text-[10px] tracking-widest text-neutral-400 uppercase">Colony</p>
+              </div>
+              <div className="text-center">
+                <p className="text-2xl font-light text-white">Chordia</p>
+                <p className="text-[10px] tracking-widest text-neutral-400 uppercase">City, Sodala</p>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* 6. DINING PREVIEW */}
-      <section className="py-24 px-6 bg-[#FCFCFF]">
-        <div className="max-w-7xl mx-auto">
+      {/* 7. EVENTS AT THE HOTEL */}
+      <section className="py-24 px-6 bg-neutral-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.05)_0%,transparent_60%)]" />
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <SectionHeading
-              tag="Culinary Experiences"
-              title="Three Distinct Worlds of Taste"
-              subtitle="From woodfire primal cooking to Japanese omakase excellence — each restaurant is a destination in itself."
+              tag="Events at Stay Casa Inn"
+              title="Create Memorable Moments"
+              subtitle="From corporate meetings to family celebrations, we provide a comfortable setting for every occasion."
+              light
             />
             <ScrollReveal direction="right">
               <Link
-                href="/dining"
-                className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-red-600 hover:text-red-700 border-b border-red-200 hover:border-red-600 pb-1 transition-all shrink-0"
+                href="/events"
+                className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-red-400 hover:text-red-300 border-b border-red-800/50 hover:border-red-400 pb-1 transition-all shrink-0"
               >
-                Explore Dining <ArrowRight className="w-3.5 h-3.5" />
+                Plan Your Event <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </ScrollReveal>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {restaurants.slice(0, 2).map((r, i) => (
-              <ScrollReveal key={r.id} delay={i * 0.15}>
-                <div className="group rounded-2xl overflow-hidden bg-white shadow-soft-premium hover:shadow-depth-xl transition-shadow duration-500">
-                  <div className="relative h-56 overflow-hidden">
-                    <img
-                      src={r.image}
-                      alt={r.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/70 to-transparent" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="text-xl font-light text-white">{r.name}</h3>
-                      <p className="text-xs text-red-300 mt-1">{r.cuisine}</p>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-neutral-500 text-sm font-light mb-3">{r.tagline}</p>
-                    <div className="flex items-center justify-between text-xs text-neutral-400 border-t border-neutral-100 pt-3">
-                      <span>Chef {r.chef}</span>
-                      <span>{r.hours}</span>
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <ScrollReveal>
+              <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 h-full hover:border-red-900/30 transition-colors duration-300">
+                <Calendar className="w-8 h-8 text-red-400 mb-4" />
+                <h3 className="text-lg font-light text-white mb-2">Corporate Events</h3>
+                <p className="text-neutral-400 text-sm font-light leading-relaxed">
+                  Business meetings, conferences, and team gatherings in a professional yet comfortable environment.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 h-full hover:border-red-900/30 transition-colors duration-300">
+                <Calendar className="w-8 h-8 text-red-400 mb-4" />
+                <h3 className="text-lg font-light text-white mb-2">Birthday &amp; Anniversary</h3>
+                <p className="text-neutral-400 text-sm font-light leading-relaxed">
+                  Celebrate your special day with friends and family in our welcoming event spaces.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <div className="bg-neutral-900/50 border border-neutral-800 rounded-2xl p-8 h-full hover:border-red-900/30 transition-colors duration-300">
+                <Calendar className="w-8 h-8 text-red-400 mb-4" />
+                <h3 className="text-lg font-light text-white mb-2">Social Gatherings</h3>
+                <p className="text-neutral-400 text-sm font-light leading-relaxed">
+                  Family reunions, group stays, and social events tailored to your preferences.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* 7. SPA TEASER */}
-      <section className="py-24 px-6 bg-neutral-950 text-center relative overflow-hidden">
+      {/* 8. SPA TEASER */}
+      {/* <section className="py-24 px-6 bg-neutral-950 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.05)_0%,transparent_60%)]" />
         <div className="max-w-6xl mx-auto relative z-10">
           <SectionHeading
@@ -268,9 +351,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* 8. AWARDS ROW */}
+      {/* 9. AWARDS ROW */}
       <section className="py-16 px-6 bg-neutral-50 border-y border-neutral-100">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
@@ -291,7 +374,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. TESTIMONIALS */}
+      {/* 10. TESTIMONIALS */}
       <section className="py-24 px-6 bg-[#FCFCFF]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-14">
@@ -322,7 +405,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 10. BOOKING CTA */}
+      {/* 11. BOOKING CTA */}
       <section className="relative py-32 px-6 overflow-hidden bg-neutral-950">
         <div className="absolute inset-0">
           <img
@@ -341,7 +424,7 @@ export default function HomePage() {
               Begin Your Stay
             </h2>
             <p className="text-neutral-300 font-light mb-10 text-lg">
-              Comfortable suites. Fine dining. Relaxation and wellness. Unforgettable hospitality.
+              Comfortable rooms. Friendly hospitality. Unforgettable experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -355,7 +438,7 @@ export default function HomePage() {
                 href="/contact"
                 className="inline-flex items-center gap-2 border border-white/20 hover:border-white/60 text-white/80 hover:text-white px-10 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300"
               >
-                Speak to Concierge
+                Contact Us
               </Link>
             </div>
           </ScrollReveal>

@@ -41,10 +41,10 @@ export default function ExperiencesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-neutral-950 pt-32 pb-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2000" alt="Stay Casa Inn Jaipur" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 to-neutral-950" />
+      <section className="relative pt-32 pb-24 px-6 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/DSC_3823.JPG.avif" alt="Stay Casa Inn Jaipur" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-neutral-950/60" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">Guest Experience</span>
@@ -74,7 +74,7 @@ export default function ExperiencesPage() {
             <ScrollReveal delay={0.15}>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800"
+                  src="/DSC_3823.JPG.avif"
                   alt="Hotel room comfort"
                   className="rounded-2xl shadow-depth-xl w-full h-[400px] object-cover"
                 />
@@ -108,7 +108,7 @@ export default function ExperiencesPage() {
             <ScrollReveal>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800"
+                  src="/DSC_3793.JPG.avif"
                   alt="Clean and spacious room"
                   className="rounded-2xl shadow-depth-xl w-full h-[400px] object-cover"
                 />

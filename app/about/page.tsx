@@ -25,14 +25,14 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-neutral-950 pt-32 pb-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative pt-32 pb-24 px-6 overflow-hidden">
+        <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=2000"
+            src="/DSC_3833-HDR.jpg.avif"
             alt="Stay Casa Inn Jaipur"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 to-neutral-950" />
+          <div className="absolute inset-0 bg-neutral-950/60" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <span className="text-[10px] font-semibold tracking-[0.4em] text-red-400 uppercase mb-4 block">About Stay Casa Inn</span>
@@ -63,7 +63,7 @@ export default function AboutPage() {
             <ScrollReveal delay={0.15}>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800"
+                  src="/DSC_3842-HDR.jpg.avif"
                   alt="Hotel room"
                   className="rounded-2xl shadow-depth-xl w-full h-[500px] object-cover"
                 />
