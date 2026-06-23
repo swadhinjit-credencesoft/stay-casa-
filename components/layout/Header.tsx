@@ -48,13 +48,12 @@ export default function Header() {
         <div className="max-w-[1920px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="flex flex-col items-start z-50">
-            <span className="text-xl lg:text-2xl font-light tracking-[0.3em] text-neutral-900 uppercase">
-              S T A Y
-            </span>
-            <span className="text-[9px] tracking-[0.5em] text-red-500 uppercase mt-0.5 ml-0.5">
-              C A S A  I N N
-            </span>
+          <Link href="/" className="z-50 flex items-center">
+            <img
+              src="/stay-casa-logo.png"
+              alt="Stay Casa Inn"
+              className="h-20 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

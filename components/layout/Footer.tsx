@@ -20,16 +20,15 @@ export default function Footer() {
           
           {/* Logo & Manifesto */}
           <div className="lg:col-span-4 space-y-6">
-            <Link href="/" className="flex flex-col items-start">
-              <span className="text-2xl font-light tracking-[0.3em] uppercase">
-                S T A Y
-              </span>
-              <span className="text-[10px] tracking-[0.5em] text-red-500 uppercase mt-0.5 ml-0.5">
-                C A S A  I N N
-              </span>
+            <Link href="/" className="flex items-center">
+              <img
+                src="/stay-casa-logo.png"
+                alt="Stay Casa Inn"
+                className="h-24 w-auto"
+              />
             </Link>
             <p className="text-neutral-400 font-light leading-relaxed max-w-sm">
-              Nestled in the stunning coastal landscape, Hotel Stay Casa Inn offers a perfect blend of comfort and elegance. Our architecture honors the natural beauty while providing a warm and welcoming environment for every guest.
+              Stay Casa Inn offers a perfect blend of comfort and warm hospitality in the heart of Jaipur. Thoughtfully designed rooms, modern amenities, and personalized service for business and leisure travelers alike.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-500 transition-colors rounded-full" aria-label="Instagram">
@@ -66,15 +65,15 @@ export default function Footer() {
             <ul className="space-y-4 font-light text-neutral-400">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4.5 h-4.5 text-neutral-500 mt-0.5 shrink-0" />
-                <span>100 Volcano Crest Road, East Peninsula Cove, Atlantic Coast, 90210</span>
+                <span>R-3-50 North Part, Indraprasth Colony, Chordia City, Sodala, Jaipur</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-neutral-500 shrink-0" />
-                <span>+1 800 STAY CASA</span>
+                <span>+91 98290 76894</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-neutral-500 shrink-0" />
-                <span>reservations@hotelstaycasainn.com</span>
+                <span>info@hotelstaycasainn.com</span>
               </li>
             </ul>
           </div>
@@ -85,7 +84,7 @@ export default function Footer() {
               The Private Register
             </h4>
             <p className="text-neutral-400 font-light leading-relaxed">
-              Subscribe to receive private seasonal offerings, culinary events, and design journals.
+              Subscribe to receive exclusive offers, seasonal packages, and updates from Stay Casa Inn.
             </p>
             <form onSubmit={handleNewsletterSubmit} className="relative mt-2">
               <input
