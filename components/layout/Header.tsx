@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,7 +12,7 @@ const navLinks = [
   { name: "Rooms", href: "/rooms" },
   { name: "Experiences", href: "/experiences" },
   // { name: "Dining", href: "/dining" },
-  { name: "events", href: "/events" },
+  // { name: "events", href: "/events" },
   { name: "gallery", href: "/gallery" },
   { name: "about", href: "/about" },
    { name: "contact", href: "/contact" },
@@ -37,6 +37,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const setQuickBookingOpen = useUiStore((state) => state.setQuickBookingOpen);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
   // Close menu on link click
@@ -44,7 +53,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-neutral-100/50 transition-all duration-300">
+      <header className={cn("fixed top-0 left-0 w-full z-50 transition-all duration-500", scrolled ? "bg-white/80 backdrop-blur-md border-b border-neutral-100/50 shadow-sm" : "bg-transparent border-b border-transparent")}>
         <div className="max-w-[1920px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
           
           {/* Logo */}
@@ -64,7 +73,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="relative group text-sm font-medium tracking-widest text-neutral-800 hover:text-neutral-900 transition-colors uppercase py-2"
+                  className={cn("relative group text-sm font-medium tracking-widest transition-colors uppercase py-2", scrolled ? "text-neutral-800 hover:text-neutral-900" : "text-white/90 hover:text-white")}
                 >
                   {link.name}
                   <span
@@ -83,16 +92,16 @@ export default function Header() {
             {/* Quick Reserve CTA */}
             <button
               onClick={() => setQuickBookingOpen(true)}
-              className="hidden sm:flex items-center space-x-2 border border-neutral-300 hover:border-red-600 hover:bg-red-600 hover:text-white px-5 py-2.5 rounded-sm transition-all duration-300 text-xs font-semibold tracking-widest uppercase text-neutral-800"
+              className={cn("hidden sm:flex items-center space-x-2 border px-5 py-2.5 rounded-sm transition-all duration-300 text-xs font-semibold tracking-widest uppercase", scrolled ? "border-neutral-300 hover:border-red-600 hover:bg-red-600 hover:text-white text-neutral-800" : "border-white/30 hover:border-white text-white")}
             >
               <Calendar className="w-3.5 h-3.5" />
-              <span>Reserve</span>
+              <span>Booknow </span>
             </button>
 
             {/* Menu Toggle */}
             <button
               onClick={toggleMenu}
-              className="flex items-center justify-center p-2.5 rounded-full bg-white/80 backdrop-blur-md border border-neutral-200/50 hover:bg-neutral-900 hover:text-white transition-all duration-300"
+              className={cn("flex items-center justify-center p-2.5 rounded-full transition-all duration-300", scrolled ? "bg-white/80 backdrop-blur-md border border-neutral-200/50 hover:bg-neutral-900 hover:text-white" : "bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white hover:text-neutral-900")}
               aria-label="Toggle Menu"
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

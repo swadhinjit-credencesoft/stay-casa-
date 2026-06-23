@@ -79,12 +79,12 @@ export default function CinematicHero() {
         animate="show"
       >
         {/* Location Tag */}
-        <motion.div variants={fadeIn} className="mb-8">
+        {/* <motion.div variants={fadeIn} className="mb-8">
           <span className="inline-flex items-center gap-3 text-[10px] sm:text-xs font-medium tracking-[0.4em] text-red-400 uppercase border border-red-500/30 rounded-full px-5 py-2 bg-red-950/20 backdrop-blur-sm">
             <span className="w-1 h-1 bg-red-500 rounded-full animate-pulse" />
             Atlantic Coast &nbsp;·&nbsp; Volcanic Cove &nbsp;·&nbsp; Private Peninsula
           </span>
-        </motion.div>
+        </motion.div> */}
 
         {/* Hero Headline */}
         <motion.h1
