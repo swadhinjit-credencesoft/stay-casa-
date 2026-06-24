@@ -6,8 +6,6 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, Phone, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useUiStore } from "@/store/useUiStore";
-
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Rooms", href: "/rooms" },
@@ -36,7 +34,6 @@ const fullscreenLinks = [
 export default function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const setQuickBookingOpen = useUiStore((state) => state.setQuickBookingOpen);
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -90,15 +87,16 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center space-x-4 z-50">
-            {/* Quick Reserve CTA */}
-            <button
-              onClick={() => setQuickBookingOpen(true)}
+            {/* Book Now CTA */}
+            <a
+              href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn("hidden sm:flex items-center space-x-2 border px-5 py-2.5 rounded-sm transition-all duration-300 text-xs font-semibold tracking-widest uppercase", scrolled ? "border-neutral-300 hover:border-red-600 hover:bg-red-600 hover:text-white text-neutral-800" : "border-white/30 hover:border-white text-white")}
             >
               <Calendar className="w-3.5 h-3.5" />
-              <span>Booknow </span>
-            </button>
-
+              <span>Book Now</span>
+            </a>
             {/* Menu Toggle */}
             <button
               onClick={toggleMenu}
@@ -146,17 +144,23 @@ export default function Header() {
                     <Calendar className="w-4 h-4 text-red-500" />
                     <span className="text-sm tracking-wider">concierge@hotelstaycasainn.com</span>
                   </div>
-                  <div className="pt-4">
-                    <button
-                      onClick={() => {
-                        setIsOpen(false);
-                        setQuickBookingOpen(true);
-                      }}
+                  <div className="pt-4 flex gap-4">
+                    <a
+                      href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center space-x-2 text-xs font-semibold tracking-widest text-red-500 hover:text-red-400 uppercase transition-all"
                     >
-                      <span>Plan Your Stay</span>
+                      <span>Book Now</span>
                       <ArrowRight className="w-4 h-4" />
-                    </button>
+                    </a>
+                    <Link
+                      href="/contact"
+                      onClick={handleLinkClick}
+                      className="inline-flex items-center space-x-2 text-xs font-semibold tracking-widest text-neutral-400 hover:text-white uppercase transition-all"
+                    >
+                      <span>Contact Us</span>
+                    </Link>
                   </div>
                 </div>
               </div>

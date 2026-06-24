@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Star, Award, MapPin, Calendar, Building2 } from "lucide-react";
+import { ArrowRight, Star, Award, MapPin, Calendar, Building2, ExternalLink } from "lucide-react";
+import { BOOKING_ENGINE_URL } from "@/lib/bookone";
 import { roomsSuites } from "@/lib/mockData";
 import { getHotelSchema } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -427,13 +428,15 @@ export default function HomePage() {
               Comfortable rooms. Friendly hospitality. Unforgettable experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/booking"
+              <a
+                href={BOOKING_ENGINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)]"
               >
-                Reserve Now
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+                Book Now
+                <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 border border-white/20 hover:border-white/60 text-white/80 hover:text-white px-10 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300"

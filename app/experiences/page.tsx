@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, MapPin, Users, Wifi, Shield } from "lucide-react";
+import { CheckCircle, MapPin, Users, Wifi, Shield, ExternalLink } from "lucide-react";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import Link from "next/link";
 
@@ -207,9 +207,14 @@ export default function ExperiencesPage() {
           <p className="text-neutral-400 font-light max-w-xl mx-auto mb-8 text-lg">
             Experience the perfect blend of comfort, convenience, and hospitality at Stay Casa Inn Jaipur. We look forward to making your Jaipur visit memorable and enjoyable.
           </p>
-          <Link href="/booking" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-all duration-300">
-            Reserve Now
-          </Link>
+          <a
+            href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-all duration-300"
+          >
+            Book Now <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         </ScrollReveal>
       </section>
     </>

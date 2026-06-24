@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, Tag, ArrowRight, Calendar } from "lucide-react";
+import { Check, Tag, ArrowRight, Calendar, ExternalLink } from "lucide-react";
 import { offers } from "@/lib/mockData";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/motion/ScrollReveal";
@@ -78,12 +78,14 @@ export default function OffersPage() {
                         <span>Valid until {offer.validUntil}</span>
                       </div>
                     </div>
-                    <Link
-                      href="/booking"
+                    <a
+                      href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group/btn inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-sm text-xs font-bold tracking-widest uppercase transition-all duration-300 shrink-0"
                     >
-                      Claim Offer <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                    </Link>
+                      Claim Offer <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
                   </div>
                 </div>
               </div>

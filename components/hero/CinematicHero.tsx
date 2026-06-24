@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ChevronDown, Calendar, Users, ArrowRight } from "lucide-react";
-import { useBookingStore } from "@/store/useBookingStore";
-import { useUiStore } from "@/store/useUiStore";
+import { ChevronDown, Calendar, Users, ArrowRight, ExternalLink } from "lucide-react";
+import { BOOKING_ENGINE_URL, buildBookingUrl } from "@/lib/bookone";
 
 const containerVariants = {
   hidden: {},
@@ -18,10 +17,9 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] as const } },
 };
 
-const fadeIn = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { duration: 1.2 } },
-};
+function formatInput(d: Date | null) {
+  return d ? d.toISOString().split("T")[0] : "";
+}
 
 export default function CinematicHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,19 +28,25 @@ export default function CinematicHero() {
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.8], [0.55, 0.85]);
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
-  const { checkIn, checkOut, guests, setDates, setGuests } = useBookingStore();
-  const { setQuickBookingOpen } = useUiStore();
+  const [checkIn, setCheckIn] = useState<Date | null>(null);
+  const [checkOut, setCheckOut] = useState<Date | null>(null);
+  const [guests, setGuests] = useState(2);
 
-  const formatInput = (d: Date | null) => (d ? d.toISOString().split("T")[0] : "");
-
-  React.useEffect(() => {
+  useEffect(() => {
     if (!checkIn) {
       const t = new Date();
       const t2 = new Date();
-      t2.setDate(t.getDate() + 3);
-      setDates(t, t2);
+      t2.setDate(t.getDate() + 2);
+      setCheckIn(t);
+      setCheckOut(t2);
     }
-  }, [checkIn, setDates]);
+  }, [checkIn]);
+
+  const handleCheckRates = () => {
+    if (!checkIn || !checkOut) return;
+    const url = buildBookingUrl(checkIn, checkOut, guests);
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section
@@ -78,14 +82,6 @@ export default function CinematicHero() {
         initial="hidden"
         animate="show"
       >
-        {/* Location Tag */}
-        {/* <motion.div variants={fadeIn} className="mb-8">
-          <span className="inline-flex items-center gap-3 text-[10px] sm:text-xs font-medium tracking-[0.4em] text-red-400 uppercase border border-red-500/30 rounded-full px-5 py-2 bg-red-950/20 backdrop-blur-sm">
-            <span className="w-1 h-1 bg-red-500 rounded-full animate-pulse" />
-            Atlantic Coast &nbsp;·&nbsp; Volcanic Cove &nbsp;·&nbsp; Private Peninsula
-          </span>
-        </motion.div> */}
-
         {/* Hero Headline */}
         <motion.h1
           variants={fadeUp}
@@ -108,15 +104,16 @@ export default function CinematicHero() {
         </motion.p>
 
         {/* CTA Buttons */}
-        <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mb-16">
-          <button
-            onClick={() => setQuickBookingOpen(true)}
+        <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mb-10">
+          <a
+            href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)]"
           >
-            <Calendar className="w-4 h-4" />
-            Reserve Your Room
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+            Book Your Stay
+            <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
           <a
             href="/rooms"
             className="inline-flex items-center gap-2 border border-white/20 hover:border-white/60 text-white/80 hover:text-white px-8 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300 backdrop-blur-sm"
@@ -139,7 +136,7 @@ export default function CinematicHero() {
               <input
                 type="date"
                 value={formatInput(checkIn)}
-                onChange={(e) => setDates(e.target.value ? new Date(e.target.value) : null, checkOut)}
+                onChange={(e) => setCheckIn(e.target.value ? new Date(e.target.value) : null)}
                 min={new Date().toISOString().split("T")[0]}
                 className="bg-transparent text-white text-sm font-light tracking-wide outline-none border-none cursor-pointer w-full"
               />
@@ -152,7 +149,7 @@ export default function CinematicHero() {
               <input
                 type="date"
                 value={formatInput(checkOut)}
-                onChange={(e) => setDates(checkIn, e.target.value ? new Date(e.target.value) : null)}
+                onChange={(e) => setCheckOut(e.target.value ? new Date(e.target.value) : null)}
                 min={formatInput(checkIn) || new Date().toISOString().split("T")[0]}
                 className="bg-transparent text-white text-sm font-light tracking-wide outline-none border-none cursor-pointer w-full"
               />
@@ -163,14 +160,24 @@ export default function CinematicHero() {
                 <Users className="w-3 h-3" /> Guests
               </label>
               <div className="flex items-center gap-2 mt-0.5">
-                <button onClick={() => setGuests(Math.max(1, guests.adults - 1), guests.children)} className="w-5 h-5 border border-white/20 rounded-full text-white/60 hover:text-white text-xs flex items-center justify-center">-</button>
-                <span className="text-white text-sm font-light">{guests.adults + guests.children} Guest{guests.adults + guests.children !== 1 ? "s" : ""}</span>
-                <button onClick={() => setGuests(Math.min(6, guests.adults + 1), guests.children)} className="w-5 h-5 border border-white/20 rounded-full text-white/60 hover:text-white text-xs flex items-center justify-center">+</button>
+                <button
+                  onClick={() => setGuests(Math.max(1, guests - 1))}
+                  className="w-5 h-5 border border-white/20 rounded-full text-white/60 hover:text-white text-xs flex items-center justify-center"
+                >
+                  -
+                </button>
+                <span className="text-white text-sm font-light">{guests} Guest{guests !== 1 ? "s" : ""}</span>
+                <button
+                  onClick={() => setGuests(Math.min(6, guests + 1))}
+                  className="w-5 h-5 border border-white/20 rounded-full text-white/60 hover:text-white text-xs flex items-center justify-center"
+                >
+                  +
+                </button>
               </div>
             </div>
-            {/* Reserve CTA */}
+            {/* Check Rates CTA */}
             <button
-              onClick={() => setQuickBookingOpen(true)}
+              onClick={handleCheckRates}
               className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 text-xs font-bold tracking-widest uppercase transition-colors flex items-center justify-center gap-2"
             >
               Check Rates

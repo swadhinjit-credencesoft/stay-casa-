@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Check, Users, Maximize2, ArrowLeft, ExternalLink } from "lucide-react";
+import { BOOKING_ENGINE_URL } from "@/lib/bookone";
 import { roomsSuites } from "@/lib/mockData";
 import { formatCurrency } from "@/lib/utils";
 import { getRoomSchema } from "@/lib/schema";
@@ -154,12 +155,14 @@ export default async function RoomDetailPage({ params }: Props) {
                       <input type="date" className="text-sm text-neutral-800 outline-none border-none w-full bg-transparent" />
                     </div>
                   </div>
-                  <Link
-                    href="/booking"
+                  <a
+                    href={BOOKING_ENGINE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full text-center bg-red-600 hover:bg-red-700 text-white py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-colors duration-300"
                   >
-                    Reserve This Suite
-                  </Link>
+                    Book This Room
+                  </a>
                   <p className="text-[11px] text-neutral-400 text-center font-light">
                     Free cancellation until 48 hours before arrival
                   </p>
