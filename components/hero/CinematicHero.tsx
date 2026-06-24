@@ -102,10 +102,9 @@ export default function CinematicHero() {
         {/* Subtitle */}
         <motion.p
           variants={fadeUp}
-          className="text-base sm:text-lg text-neutral-300/80 font-light max-w-xl leading-relaxed mb-12"
+          className="text-sm sm:text-base text-white/80 font-normal max-w-xl leading-relaxed mb-12"
         >
-          Twelve private suites designed for your ultimate comfort. Relaxation
-          and wellness facilities. A culinary experience rooted in passion.
+          Comfortable rooms designed for your relaxation. Modern amenities and warm hospitality for a memorable stay in Jaipur.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -115,7 +114,7 @@ export default function CinematicHero() {
             className="group inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)]"
           >
             <Calendar className="w-4 h-4" />
-            Reserve Your Suite
+            Reserve Your Room
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
           <a

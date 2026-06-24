@@ -77,7 +77,7 @@ export interface BlogArticle {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: "suites" | "wellness" | "dining" | "resort" | "events";
+  category: "suites" | "interior" | "exterior";
   mediaType: "image" | "video";
   url: string;
   thumbnail: string;
@@ -419,10 +419,20 @@ export const blogArticles: BlogArticle[] = [
 ];
 
 export const galleryItems: GalleryItem[] = [
-  { id: "g1", title: "Sunset over the Ocean Suite", category: "suites", mediaType: "image", url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=400" },
-  { id: "g2", title: "Subterranean sound bath experience", category: "wellness", mediaType: "image", url: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400" },
-  { id: "g3", title: "Amber Woodfire Hearth main dining room", category: "dining", mediaType: "image", url: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=400" },
-  { id: "g4", title: "Aerial view of our private peninsula", category: "resort", mediaType: "image", url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=400" },
-  { id: "g5", title: "Destination wedding at Cliff Edge Cove", category: "events", mediaType: "image", url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=400" },
-  { id: "g6", title: "Infinity pool stretching into the sea", category: "resort", mediaType: "image", url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1200", thumbnail: "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=400" }
+  { id: "g1", title: "Hotel Exterior Front View", category: "exterior", mediaType: "image", url: "/DSC_3709.avif", thumbnail: "/DSC_3709.avif" },
+  { id: "g2", title: "Hotel Entrance", category: "exterior", mediaType: "image", url: "/DSC_3721.avif", thumbnail: "/DSC_3721.avif" },
+  { id: "g3", title: "Elegant Dining Area", category: "interior", mediaType: "image", url: "/DSC_3742.avif", thumbnail: "/DSC_3742.avif" },
+  { id: "g4", title: "Dining Setup", category: "interior", mediaType: "image", url: "/DSC_3745.avif", thumbnail: "/DSC_3745.avif" },
+  { id: "g5", title: "Deluxe Room Interior", category: "suites", mediaType: "image", url: "/DSC_3793.JPG.avif", thumbnail: "/DSC_3793.JPG.avif" },
+  { id: "g6", title: "Super Deluxe Room", category: "suites", mediaType: "image", url: "/DSC_3796.JPG.avif", thumbnail: "/DSC_3796.JPG.avif" },
+  { id: "g7", title: "Suite Room", category: "suites", mediaType: "image", url: "/DSC_3799.JPG.avif", thumbnail: "/DSC_3799.JPG.avif" },
+  { id: "g8", title: "Room Interior", category: "suites", mediaType: "image", url: "/DSC_3805.JPG.avif", thumbnail: "/DSC_3805.JPG.avif" },
+  { id: "g9", title: "Bathroom", category: "suites", mediaType: "image", url: "/DSC_3808.JPG.avif", thumbnail: "/DSC_3808.JPG.avif" },
+  { id: "g10", title: "Room Amenities", category: "suites", mediaType: "image", url: "/DSC_3811.JPG.avif", thumbnail: "/DSC_3811.JPG.avif" },
+  { id: "g11", title: "Guest Room", category: "suites", mediaType: "image", url: "/DSC_3817.JPG.avif", thumbnail: "/DSC_3817.JPG.avif" },
+  { id: "g12", title: "Comfortable Seating Area", category: "suites", mediaType: "image", url: "/DSC_3823.JPG.avif", thumbnail: "/DSC_3823.JPG.avif" },
+  { id: "g13", title: "Hotel Corridor", category: "interior", mediaType: "image", url: "/DSC_3829.JPG.avif", thumbnail: "/DSC_3829.JPG.avif" },
+  { id: "g14", title: "Hotel Building View", category: "exterior", mediaType: "image", url: "/DSC_3833-HDR.jpg.avif", thumbnail: "/DSC_3833-HDR.jpg.avif" },
+  { id: "g15", title: "Hotel Surroundings", category: "exterior", mediaType: "image", url: "/DSC_3839-HDR.jpg.avif", thumbnail: "/DSC_3839-HDR.jpg.avif" },
+  { id: "g16", title: "Street View", category: "exterior", mediaType: "image", url: "/DSC_3842-HDR.jpg.avif", thumbnail: "/DSC_3842-HDR.jpg.avif" },
 ];

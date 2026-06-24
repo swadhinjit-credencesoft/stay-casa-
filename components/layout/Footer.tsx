@@ -2,14 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you. You have been added to our private register.");
-  };
-
   return (
     <footer className="bg-neutral-900 text-neutral-100 border-t border-neutral-800 pt-20 pb-10 overflow-hidden relative">
       <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#EF4444_1px,transparent_1px)] [background-size:32px_32px]" />
@@ -49,11 +44,13 @@ export default function Footer() {
               Explore
             </h4>
             <ul className="space-y-3 font-light text-neutral-400">
-              <li><Link href="/rooms" className="hover:text-white transition-colors">Suites & Rooms</Link></li>
+              <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/rooms" className="hover:text-white transition-colors">Rooms</Link></li>
               <li><Link href="/experiences" className="hover:text-white transition-colors">Experiences</Link></li>
-              {/* <li><Link href="/dining" className="hover:text-white transition-colors">Culinary Hearth</Link></li> */}
-              <li><Link href="/spa" className="hover:text-white transition-colors">Wellness Rituals</Link></li>
-              <li><Link href="/offers" className="hover:text-white transition-colors">Seasonal Packages</Link></li>
+              <li><Link href="/events" className="hover:text-white transition-colors">Events</Link></li>
+              <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -78,37 +75,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter Signup */}
-          <div className="lg:col-span-3 space-y-6">
-            <h4 className="text-xs font-semibold tracking-[0.3em] text-red-500 uppercase">
-              The Private Register
-            </h4>
-            <p className="text-neutral-400 font-light leading-relaxed">
-              Subscribe to receive exclusive offers, seasonal packages, and updates from Stay Casa Inn.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="relative mt-2">
-              <input
-                type="email"
-                required
-                placeholder="Enter email address"
-                className="w-full bg-neutral-800 text-neutral-100 placeholder-neutral-500 border border-neutral-700/50 rounded-sm py-3 px-4 text-sm font-light tracking-wide focus:outline-none focus:border-red-600 transition-colors pr-12"
-              />
-              <button
-                type="submit"
-                className="absolute right-0 top-0 h-full px-4 text-red-500 hover:text-red-400 transition-colors flex items-center justify-center"
-                aria-label="Submit Newsletter Email"
-              >
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </form>
-          </div>
+
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-neutral-800 pt-8 mt-4 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-500 tracking-widest uppercase">
-          <span>© {new Date().getFullYear()} HOTEL STAY CASA INN. ALL RIGHTS RESERVED.</span>
+          <span>© {new Date().getFullYear()} Designed and Developed By <a href="https://www.credencesoft.in/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CredenceSoft</a>, Powered By <a href="https://bookonepms.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">BookOne</a></span>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link>
+            {/* <Link href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link> */}
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
           </div>

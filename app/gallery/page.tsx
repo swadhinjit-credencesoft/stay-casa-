@@ -1,16 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { galleryItems } from "@/lib/mockData";
 import { cn } from "@/lib/utils";
-import SectionHeading from "@/components/ui/SectionHeading";
 
-type Category = "All" | "suites" | "wellness" | "dining" | "resort" | "events";
+type Category = "All" | "suites" | "interior" | "exterior";
 
-const categories: Category[] = ["All", "suites", "wellness", "dining", "resort", "events"];
+const categories: Category[] = ["All", "suites", "interior", "exterior"];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
