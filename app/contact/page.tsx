@@ -77,7 +77,7 @@ export default function ContactPage() {
             </div>
           </div>
           <a
-            href="https://wa.me/9773302154"
+            href="https://api.whatsapp.com/send?phone=9773302154&text=This%20is%20an%20Enquiry%20from%20%3A%20The%20HotelMate%20Website%0AHotel%20Name%3A%20Stay%20Casa%20Inn%2C%0AProperty%20Id%3A%203576%2C%0AexternalSite%3A%20WebSite%2C%0AAddress%3A%20R-3-50%20North%20Part%2C%20Indraprasth%20Colony%2C%20Chordia%20City%2C%20Sodala%2C%20Jaipur%2C%20India"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-colors shrink-0"

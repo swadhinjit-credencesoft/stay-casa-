@@ -5,10 +5,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, Phone, ExternalLink, Mail, X } from "lucide-react";
 import { BOOKING_ENGINE_URL } from "@/lib/bookone";
 
+const waMsg =
+  "This is an Enquiry from : The HotelMate Website" +
+  "\nHotel Name: Stay Casa Inn," +
+  "\nProperty Id: 3576," +
+  "\nexternalSite: WebSite," +
+  "\nAddress: R-3-50 North Part, Indraprasth Colony, Chordia City, Sodala, Jaipur, India";
+const waUrl = "https://api.whatsapp.com/send?phone=9773302154&text=" + encodeURIComponent(waMsg);
+
 const actions = [
   {
     label: "WhatsApp",
-    href: "https://wa.me/9773302154",
+    href: waUrl,
     icon: MessageCircle,
     bg: "bg-green-500 hover:bg-green-600",
   },
