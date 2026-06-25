@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@hotelstaycasainn.com",
-    href: "mailto:info@hotelstaycasainn.com",
+    value: "staycasainn@gmail.com",
+    href: "mailto:staycasainn@gmail.com",
   },
   {
     icon: MapPin,

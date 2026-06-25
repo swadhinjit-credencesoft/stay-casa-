@@ -54,6 +54,18 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Legals */}
+          <div className="lg:col-span-2 space-y-6">
+            <h4 className="text-xs font-semibold tracking-[0.3em] text-red-500 uppercase">
+              Legals
+            </h4>
+            <ul className="space-y-3 font-light text-neutral-400">
+              <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-white transition-colors">Terms &amp; Conditions</Link></li>
+              <li><Link href="/rules" className="hover:text-white transition-colors">Rules &amp; Regulations</Link></li>
+            </ul>
+          </div>
+
           {/* Core Info */}
           <div className="lg:col-span-3 space-y-6">
             <h4 className="text-xs font-semibold tracking-[0.3em] text-red-500 uppercase">
@@ -70,7 +82,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-neutral-500 shrink-0" />
-                <span>info@hotelstaycasainn.com</span>
+                <span>staycasainn@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -81,12 +93,6 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-neutral-800 pt-8 mt-4 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-500 tracking-widest uppercase">
           <span>© {new Date().getFullYear()} Designed and Developed By <a href="https://www.credencesoft.in/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CredenceSoft</a>, Powered By <a href="https://bookonepms.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">BookOne</a></span>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            {/* <Link href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link> */}
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
-            <Link href="/rules" className="hover:text-white transition-colors">Rules & Regulations</Link>
-          </div>
         </div>
       </div>
     </footer>

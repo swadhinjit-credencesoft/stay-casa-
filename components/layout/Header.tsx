@@ -142,7 +142,7 @@ export default function Header() {
                   </div>
                   <div className="flex items-center space-x-3 text-neutral-400">
                     <Calendar className="w-4 h-4 text-red-500" />
-                    <span className="text-sm tracking-wider">concierge@hotelstaycasainn.com</span>
+                    <span className="text-sm tracking-wider">hotelstaycasainn.com</span>
                   </div>
                   <div className="pt-4 flex gap-4">
                     <a

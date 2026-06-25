@@ -40,7 +40,7 @@ const sections = [
   {
     title: "Contact Us",
     content:
-      "If you have any questions about this privacy policy, please contact us at info@hotelstaycasainn.com or visit our property in Indraprasth Colony, Chordia City, Jaipur.",
+      "If you have any questions about this privacy policy, please contact us at staycasainn@gmail.com or visit our property in Indraprasth Colony, Chordia City, Jaipur.",
   },
 ];
 
