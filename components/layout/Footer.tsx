@@ -85,6 +85,7 @@ export default function Footer() {
             {/* <Link href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</Link> */}
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
+            <Link href="/rules" className="hover:text-white transition-colors">Rules & Regulations</Link>
           </div>
         </div>
       </div>

@@ -206,6 +206,7 @@ export default function Header() {
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                 <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+                <Link href="/rules" className="hover:text-white transition-colors">Rules & Regulations</Link>
               </div>
             </div>
           </motion.div>
