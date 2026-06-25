@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FloatingBooking from "@/components/layout/FloatingBooking";
 import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <FloatingBooking />
         </Providers>
       </body>
     </html>
