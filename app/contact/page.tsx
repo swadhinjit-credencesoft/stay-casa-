@@ -8,8 +8,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 98290 76894",
-    href: "tel:+919829076894",
+    value: "+91  9773 30 21 54",
+    href: "tel:+ 919773302154",
   },
   {
     icon: Mail,
@@ -77,7 +77,7 @@ export default function ContactPage() {
             </div>
           </div>
           <a
-            href="https://wa.me/919829076894"
+            href="https://wa.me/9773302154"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-colors shrink-0"
