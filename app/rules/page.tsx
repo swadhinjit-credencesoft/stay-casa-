@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  Ban, CheckCircle, PawPrint, MapPin, Users, XCircle
+  Ban, CheckCircle, MapPin, Users, XCircle
 } from "lucide-react";
 
 export const metadata: Metadata = {

@@ -1,44 +1,39 @@
-import { RoomSuite, Offer, BlogArticle } from "./mockData";
+import { RoomSuite, BlogArticle } from "./mockData";
 
-const DOMAIN = "https://luxury-resort-cinematic.vercel.app"; // Fallback URL
+const SITE = "https://hotelstaycasainn.com";
 
 export function getHotelSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Hotel",
-      "name": "Hotel Stay Casa Inn",
-    "description": "A luxury hotel nestled in a stunning coastal setting with world-class amenities.",
-    "url": DOMAIN,
-    "telephone": "+1-800-STAY-CASA",
-    "logo": `${DOMAIN}/images/logo.png`,
+    "name": "Hotel Stay Casa Inn",
+    "description": "Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality in Sodala, Jaipur at affordable rates.",
+    "url": SITE,
+    "telephone": "+919773302154",
+    "logo": `${SITE}/stay-casa-logo.png`,
     "image": [
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200"
+      `${SITE}/DSC_3842-HDR.jpg.avif`,
     ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "100 Volcano Crest Road",
-      "addressLocality": "East Peninsula Cove",
-      "addressRegion": "Atlantic Coast",
-      "postalCode": "90210",
-      "addressCountry": "US"
+      "streetAddress": "R-3-50 North Part, Indraprasth Colony, Chordia City, Sodala",
+      "addressLocality": "Jaipur",
+      "addressRegion": "Rajasthan",
+      "postalCode": "302019",
+      "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "32.12345",
-      "longitude": "-64.12345"
+      "latitude": "26.8756",
+      "longitude": "75.7653"
     },
-    "starRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "priceRange": "$$$$",
+    "priceRange": "₹1800 - ₹3500",
     "amenityFeature": [
-      { "@type": "LocationFeatureSpecification", "name": "Private Beach Cove", "value": "true" },
-      { "@type": "LocationFeatureSpecification", "name": "Subterranean Sound Bath Cave", "value": "true" },
-      { "@type": "LocationFeatureSpecification", "name": "Helipad Access", "value": "true" },
-      { "@type": "LocationFeatureSpecification", "name": "Infinity Pool", "value": "true" }
+      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": "true" },
+      { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": "true" },
+      { "@type": "LocationFeatureSpecification", "name": "24-hour Front Desk", "value": "true" },
+      { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": "true" },
+      { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": "true" },
     ]
   };
 }
@@ -52,51 +47,20 @@ export function getRoomSchema(room: RoomSuite) {
     "occupancy": {
       "@type": "QuantitativeValue",
       "value": room.occupancy,
-      "unitCode": "C62" // Person count
+      "unitCode": "C62"
     },
     "floorSize": {
       "@type": "QuantitativeValue",
       "value": room.size,
-      "unitCode": "MTK" // Square meters
-    },
-    "bed": {
-      "@type": "BedDetails",
-      "numberOfBeds": room.occupancy > 3 ? 2 : 1,
-      "typeOfBed": room.features.find(f => f.label === "Bed Type")?.value || "King Size"
+      "unitCode": "MTK"
     },
     "offers": {
       "@type": "Offer",
       "price": room.price,
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2027-12-31"
     },
-    "image": room.images
-  };
-}
-
-export function getBreadcrumbSchema(links: { name: string; url: string }[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": links.map((link, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": link.name,
-      "item": `${DOMAIN}${link.url}`
-    }))
-  };
-}
-
-export function getOfferSchema(offer: Offer) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "SpecialAnnouncement",
-    "name": offer.title,
-    "description": offer.description,
-    "url": `${DOMAIN}/offers`,
-    "datePosted": "2026-06-12",
-    "expires": offer.validUntil
+    "image": room.images.map(i => `${SITE}${i}`)
   };
 }
 
@@ -115,15 +79,11 @@ export function getArticleSchema(article: BlogArticle) {
     },
     "publisher": {
       "@type": "Organization",
-    "name": "Hotel Stay Casa Inn",
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${DOMAIN}/images/logo.png`
-      }
+      "name": "Hotel Stay Casa Inn",
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${DOMAIN}/blog/${article.slug}`
+      "@id": `${SITE}/blog/${article.slug}`
     }
   };
 }

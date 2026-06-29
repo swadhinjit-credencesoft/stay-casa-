@@ -5,6 +5,7 @@ import { BOOKING_ENGINE_URL } from "@/lib/bookone";
 import { roomsSuites } from "@/lib/mockData";
 import { getHotelSchema } from "@/lib/schema";
 import SectionHeading from "@/components/ui/SectionHeading";
+import CountUp from "@/components/ui/CountUp";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import { CinematicHero, RoomCard } from "@/components/HomePageClient";
 
@@ -78,14 +79,10 @@ export default function HomePage() {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-800/50 border border-neutral-800/50 rounded-sm overflow-hidden mb-14">
-            {stats.map((s, i) => (
-              <ScrollReveal key={s.label} delay={i * 0.1}>
-                <div className="bg-neutral-950 px-6 py-8 text-center">
-                  <div className="text-2xl md:text-3xl font-light text-white mb-2">{s.value}</div>
-                  <div className="text-[10px] tracking-widest text-neutral-500 uppercase font-medium">{s.label}</div>
-                </div>
-              </ScrollReveal>
-            ))}
+            <ScrollReveal delay={0}><CountUp value="24/7" label="Guest Assistance" /></ScrollReveal>
+            <ScrollReveal delay={0.1}><div className="bg-neutral-950 px-6 py-8 text-center"><div className="text-2xl md:text-3xl font-light text-white mb-2">Comfortable</div><div className="text-[10px] tracking-widest text-neutral-500 uppercase font-medium">Well-Furnished Rooms</div></div></ScrollReveal>
+            <ScrollReveal delay={0.2}><div className="bg-neutral-950 px-6 py-8 text-center"><div className="text-2xl md:text-3xl font-light text-white mb-2">Free</div><div className="text-[10px] tracking-widest text-neutral-500 uppercase font-medium">High-Speed Wi-Fi</div></div></ScrollReveal>
+            <ScrollReveal delay={0.3}><CountUp value="Prime" label="Location in Jaipur" /></ScrollReveal>
           </div>
 
           <ScrollReveal>
@@ -265,7 +262,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. EVENTS AT THE HOTEL */}
+      {/* 7. NEARBY ATTRACTIONS */}
+      <section className="py-24 px-6 bg-[#FCFCFF]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="text-[10px] font-semibold tracking-[0.4em] text-red-500 uppercase mb-4 block">Explore Jaipur</span>
+            <h2 className="text-3xl md:text-4xl font-light text-neutral-900 leading-tight">Nearby Attractions</h2>
+            <p className="text-neutral-500 font-light mt-3 max-w-xl mx-auto">Stay Casa Inn is perfectly located to explore the Pink City&apos;s most iconic landmarks and experiences.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { name: "Jaipur Airport", dist: "3.5 km", icon: "✈️" },
+              { name: "Jaipur Railway Station", dist: "4.2 km", icon: "🚂" },
+              { name: "Hawa Mahal", dist: "5.8 km", icon: "🏛️" },
+              { name: "City Palace", dist: "6.1 km", icon: "👑" },
+              { name: "Jantar Mantar", dist: "6.3 km", icon: "🔭" },
+              { name: "Amer Fort", dist: "12 km", icon: "🏰" },
+              { name: "Jal Mahal", dist: "10 km", icon: "🌊" },
+              { name: "GT Shopping Centre", dist: "1.5 km", icon: "🛍️" },
+            ].map((place, i) => (
+              <ScrollReveal key={place.name} delay={i * 0.05}>
+                <div className="bg-white border border-neutral-100 rounded-xl p-5 text-center hover:shadow-soft-premium hover:border-red-100 transition-all duration-300">
+                  <span className="text-2xl mb-2 block">{place.icon}</span>
+                  <h3 className="text-sm font-medium text-neutral-900">{place.name}</h3>
+                  <p className="text-[10px] tracking-wider text-red-500 uppercase font-semibold mt-1">{place.dist}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 8. EVENTS AT THE HOTEL */}
       <section className="py-24 px-6 bg-neutral-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.05)_0%,transparent_60%)]" />
         <div className="max-w-7xl mx-auto relative z-10">
@@ -317,42 +345,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. SPA TEASER */}
-      {/* <section className="py-24 px-6 bg-neutral-950 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.05)_0%,transparent_60%)]" />
-        <div className="max-w-6xl mx-auto relative z-10">
-          <SectionHeading
-            tag="Spa & Wellness"
-            title="Subterranean Sound Healing"
-            subtitle="Enter our volcanic lava-stone cave and let ancient vibrations restore what modernity has taken."
-            align="center"
-            light
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
-            {spaTreatments.map((t, i) => (
-              <ScrollReveal key={t.id} delay={i * 0.1}>
-                <div className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 text-left hover:border-red-900/50 transition-colors duration-300">
-                  <span className="text-[9px] font-bold tracking-widest uppercase text-red-400 mb-3 block">{t.category}</span>
-                  <h3 className="text-lg font-light text-white mb-2">{t.name}</h3>
-                  <p className="text-neutral-400 text-sm font-light mb-4 line-clamp-2">{t.description}</p>
-                  <div className="flex items-center justify-between text-xs text-neutral-500 border-t border-neutral-800 pt-3">
-                    <span>{t.duration} min</span>
-                    <span className="text-red-400 font-semibold">${t.price}</span>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-          <div className="mt-10">
-            <Link
-              href="/spa"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-red-500 text-white hover:text-red-400 px-8 py-3.5 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300"
-            >
-              Discover Wellness <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section> */}
+
 
       {/* 9. AWARDS ROW */}
       <section className="py-16 px-6 bg-neutral-50 border-y border-neutral-100">

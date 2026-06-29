@@ -13,15 +13,4 @@ export function formatCurrency(value: number): string {
   }).format(value);
 }
 
-export function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  }).format(date);
-}
 
-export function getDaysDifference(checkIn: Date, checkOut: Date): number {
-  const diffTime = Math.abs(checkOut.getTime() - checkIn.getTime());
-  return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-}

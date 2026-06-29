@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Home, ChevronRight } from "lucide-react";
 import { roomsSuites } from "@/lib/mockData";

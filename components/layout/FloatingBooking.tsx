@@ -43,21 +43,29 @@ const actions = [
 export default function FloatingBooking() {
   const [open, setOpen] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [initialShow, setInitialShow] = useState(false);
 
   useEffect(() => {
+    const timer = setTimeout(() => setInitialShow(true), 2500);
     const handleScroll = () => setVisible(window.scrollY > 400);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const show = visible || initialShow;
 
   return (
     <AnimatePresence>
-      {visible && (
+      {show && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          initial={{ opacity: 0, scale: 0.5, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.8, y: 20 }}
+          exit={{ opacity: 0, scale: 0.5, y: 40 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
           className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3"
         >
           {open && (

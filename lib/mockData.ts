@@ -99,7 +99,7 @@ export const roomsSuites: RoomSuite[] = [
     price: 1800,
     images: [
       "/DSC_3793.JPG.avif",
-      "/DSC_3793.JPG.avif"
+      "/DSC_3796.JPG.avif"
     ],
     amenities: [
       "Air Conditioning",

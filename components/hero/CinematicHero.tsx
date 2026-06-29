@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { ChevronDown, Calendar, Users, ArrowRight, ExternalLink } from "lucide-react";
 import { BOOKING_ENGINE_URL, buildBookingUrl } from "@/lib/bookone";
 
@@ -27,6 +27,22 @@ export default function CinematicHero() {
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.8], [0.55, 0.85]);
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+
+  const phrases = [
+    "Comfortable rooms in the heart of Jaipur",
+    "Free Wi-Fi & air conditioning in every room",
+    "24-hour front desk & room service",
+    "Just minutes from Jaipur Airport",
+    "Warm hospitality, affordable luxury",
+  ];
+  const [phraseIndex, setPhraseIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhraseIndex((i) => (i + 1) % phrases.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [phrases.length]);
 
   const [checkIn, setCheckIn] = useState<Date | null>(null);
   const [checkOut, setCheckOut] = useState<Date | null>(null);
@@ -95,18 +111,41 @@ export default function CinematicHero() {
           Luxury
         </motion.h1>
 
-        {/* Subtitle */}
-        <motion.p
+        {/* Rotating Subtitle */}
+        <motion.div variants={fadeUp} className="h-16 sm:h-12 flex items-center justify-center mb-12">
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={phraseIndex}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4 }}
+              className="text-sm sm:text-base text-white/80 font-normal max-w-xl leading-relaxed text-center"
+            >
+              {phrases[phraseIndex]}
+            </motion.p>
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Trust Badge */}
+        <motion.div
           variants={fadeUp}
-          className="text-sm sm:text-base text-white/80 font-normal max-w-xl leading-relaxed mb-12"
+          className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-5 py-2 mb-6"
         >
-          Comfortable rooms designed for your relaxation. Modern amenities and warm hospitality for a memorable stay in Jaipur.
-        </motion.p>
+          <div className="flex -space-x-1">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <svg key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400 drop-shadow-sm" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            ))}
+          </div>
+          <span className="text-[10px] text-white/70 tracking-wider font-medium">Top Rated in Sodala</span>
+        </motion.div>
 
         {/* CTA Buttons */}
         <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mb-10">
           <a
-            href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
+            href={BOOKING_ENGINE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)]"

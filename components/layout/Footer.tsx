@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -26,14 +25,14 @@ export default function Footer() {
               Stay Casa Inn offers a perfect blend of comfort and warm hospitality in the heart of Jaipur. Thoughtfully designed rooms, modern amenities, and personalized service for business and leisure travelers alike.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-500 transition-colors rounded-full" aria-label="Instagram">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 16a4 4 0 100-8 4 4 0 000 8z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16.5 7.5V7.5m-9 0V7.5m9 4v.5"/><rect x="3" y="3" width="18" height="18" rx="5" ry="5" strokeWidth={1.5}/></svg>
+              <a href="https://wa.me/9773302154" target="_blank" rel="noopener noreferrer" className="p-2 border border-neutral-800 hover:border-green-500 hover:text-green-400 transition-colors rounded-full" aria-label="WhatsApp">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
               </a>
-              <a href="#" className="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-500 transition-colors rounded-full" aria-label="Facebook">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 2v4h-3a2 2 0 00-2 2v3h5l-1 5h-4v8H8v-8H5V8h3V6a5 5 0 015-5h4z"/></svg>
+              <a href="tel:+919773302154" className="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-500 transition-colors rounded-full" aria-label="Phone">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
               </a>
-              <a href="#" className="p-2 border border-neutral-800 hover:border-red-600 hover:text-red-500 transition-colors rounded-full" aria-label="Twitter">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.024-8-3 0 0-4.5 4.687 0 9-1.067.652-2.51 1.25-4 1 1.208 2.625 4.5 4.5 8 4.5-3.344 2.531-7.5 3-12 3 21.5 8 30.5-6 30.5-20 0-.315-.007-.63-.022-.944C20.868 5.902 21.537 4.71 22 4.01z"/></svg>
+              <a href="mailto:info@hotelstaycasainn.com" className="p-2 border border-neutral-800 hover:border-amber-500 hover:text-amber-400 transition-colors rounded-full" aria-label="Email">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </a>
             </div>
           </div>
@@ -51,6 +50,7 @@ export default function Footer() {
               <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
               <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/tourist" className="hover:text-white transition-colors">Tourist Attractions</Link></li>
             </ul>
           </div>
 

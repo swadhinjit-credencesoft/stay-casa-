@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -15,6 +15,7 @@ const navLinks = [
   { name: "gallery", href: "/gallery" },
   { name: "about", href: "/about" },
   { name: "contact", href: "/contact" },
+  { name: "tourist", href: "/tourist" },
 ];
 
 const fullscreenLinks = [
@@ -29,6 +30,7 @@ const fullscreenLinks = [
   // { name: "Exclusive Offers", href: "/offers" },
   // { name: "The Resort Journal", href: "/blog" },
   { name: "Contact & Concierge", href: "/contact" },
+  { name: "Tourist Attractions", href: "/tourist" },
 ];
 
 export default function Header() {

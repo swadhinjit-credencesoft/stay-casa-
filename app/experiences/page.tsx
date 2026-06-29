@@ -2,7 +2,6 @@
 
 import { CheckCircle, MapPin, Users, Wifi, Shield, ExternalLink } from "lucide-react";
 import ScrollReveal from "@/components/motion/ScrollReveal";
-import Link from "next/link";
 
 const highlights = [
   { icon: MapPin, text: "Excellent location in Jaipur" },
