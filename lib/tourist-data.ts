@@ -1,3 +1,5 @@
+import { BOOKING_ENGINE_URL } from "@/lib/bookone";
+
 export interface Attraction {
   slug: string;
   name: string;
@@ -225,6 +227,76 @@ export const attractions: Attraction[] = [
 ];
 
 export const getAttractionBySlug = (slug: string) => attractions.find((a) => a.slug === slug);
+
+export const touristHeroData = {
+  backgroundImage: "/jaipurbaground.avif",
+  icon: "Compass",
+  title: "Explore Jaipur",
+  subtitle: "Discover the Pink City&apos;s most iconic attractions — all within easy reach from Stay Casa Inn.",
+  badges: [
+    { icon: "MapPin", label: "Sodala, Jaipur" },
+    { icon: "Star", label: "Top-rated experiences" },
+    { icon: "Clock", label: "3–30 min from hotel" },
+  ],
+};
+
+export const quickStats = [
+  { value: "12+", label: "Top Attractions" },
+  { value: "3–30", label: "Minutes from Hotel" },
+  { value: "4.2", label: "Average Rating" },
+  { value: "4", label: "Curated Itineraries" },
+];
+
+export const attractionsSectionHeading = {
+  tag: "Must-See Sights",
+  title: "Top Attractions in Jaipur",
+  subtitle: "Handpicked highlights from TripAdvisor and local guides. All easily accessible from Stay Casa Inn.",
+};
+
+export const itinerariesSectionHeading = {
+  tag: "Plan Your Day",
+  title: "Curated Itineraries",
+  subtitle: "Suggested routes based on your interests — all starting from Stay Casa Inn.",
+};
+
+export const bookingCtaData = {
+  backgroundImage: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=2400",
+  icon: "MapPin",
+  tagline: "Start Your Adventure",
+  title: "Book Your Stay at Stay Casa Inn",
+  subtitle: "Comfortable rooms, prime location, and easy access to all of Jaipur&apos;s top attractions.",
+  primaryButton: { label: "Book Now", href: BOOKING_ENGINE_URL, external: true },
+  secondaryButton: { label: "Ask About Tours", href: "/contact" },
+};
+
+export const detailBackLink = {
+  text: "Back to Attractions",
+  href: "/tourist",
+};
+
+export const detailLabels = {
+  visitorInfo: "Visitor Info",
+  bestTime: "Best Time to Visit",
+  driveFromHotel: "Drive from Hotel",
+  distanceFromHotel: "Distance from Hotel",
+  about: "About",
+  highlights: "Highlights",
+  proTips: "Pro Tips",
+  stayCtaTitle: "Stay at Stay Casa Inn",
+  stayCtaSubtitle: "Just {distance} away — book your stay and explore {name} with ease.",
+  bookNow: "Book Now",
+};
+
+export const touristCardLabels = {
+  reviews: "reviews",
+  drive: "drive",
+  viewDetails: "View Details",
+};
+
+export const attractionHeroLabels = {
+  fromHotel: "from Stay Casa Inn",
+  drive: "drive",
+};
 
 export const experiences = [
   {
