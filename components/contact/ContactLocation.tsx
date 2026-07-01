@@ -13,7 +13,7 @@ export default function ContactLocation() {
             align="center"
           />
         </div>
-        <div className="max-w-xl mx-auto bg-neutral-50 border border-neutral-200 rounded-2xl p-8 text-center">
+        <div className="max-w-2xl mx-auto bg-neutral-50 border border-neutral-200 rounded-2xl p-8 text-center">
           <MapPin className="w-10 h-10 text-red-500 mx-auto mb-4" />
           {contactLocation.lines.map((line, i) => (
             <p
@@ -27,6 +27,18 @@ export default function ContactLocation() {
               {line}
             </p>
           ))}
+          <div className="mt-6 rounded-xl overflow-hidden border border-neutral-200 shadow-sm">
+            <iframe
+              src={contactLocation.mapEmbedUrl}
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Hotel Stay Casa Inn location"
+            />
+          </div>
           <a
             href={contactLocation.mapLink}
             target="_blank"

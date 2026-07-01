@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-4 font-light text-neutral-400">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4.5 h-4.5 text-neutral-500 mt-0.5 shrink-0" />
-                <span>R-3-50 North Part, Indraprasth Colony, Chordia City, Sodala, Jaipur</span>
+                <span>R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura, Jaipur</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-neutral-500 shrink-0" />

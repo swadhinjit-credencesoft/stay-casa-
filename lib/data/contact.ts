@@ -10,7 +10,7 @@ export const contactInfo = [
   {
     label: "Phone",
     value: "+91  9773 30 21 54",
-    href: "tel:+ 919773302154",
+    href: "tel:+919773302154",
   },
   {
     label: "Email",
@@ -19,7 +19,7 @@ export const contactInfo = [
   },
   {
     label: "Address",
-    value: "R-3-50 North Part, Indraprasth Colony, Sodala, Jaipur",
+    value: "R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura",
     href: "https://maps.google.com",
   },
 ];
@@ -28,7 +28,7 @@ export const contactWhatsApp = {
   title: "Chat on WhatsApp",
   description: "Average response under 3 minutes for urgent enquiries",
   buttonText: "Open WhatsApp",
-  link: "https://api.whatsapp.com/send?phone=9773302154&text=This%20is%20an%20Enquiry%20from%20%3A%20The%20HotelMate%20Website%0AHotel%20Name%3A%20Stay%20Casa%20Inn%2C%0AProperty%20Id%3A%203576%2C%0AexternalSite%3A%20WebSite%2C%0AAddress%3A%20R-3-50%20North%20Part%2C%20Indraprasth%20Colony%2C%20Chordia%20City%2C%20Sodala%2C%20Jaipur%2C%20India",
+  link: "https://api.whatsapp.com/send?phone=9773302154&text=This%20is%20an%20Enquiry%20from%20%3A%20The%20HotelMate%20Website%0AHotel%20Name%3A%20Stay%20Casa%20Inn%2C%0AProperty%20Id%3A%203576%2C%0AexternalSite%3A%20WebSite%2C%0AAddress%3A%20R-3-50%20North%20Part%2C%20Indraprasth%20Colony%20Chordia%20City%2C%20Keshopura%2C%20Jaipur",
 } as const;
 
 export const contactLocation = {
@@ -36,10 +36,12 @@ export const contactLocation = {
   sectionTitle: "Our Location",
   lines: [
     "R-3-50 North Part",
-    "Indraprasth Colony, Chordia City",
-    "Sodala, Jaipur",
+    "Indraprasth Colony Chordia City",
+    "Keshopura, Jaipur",
   ],
+  mapEmbedUrl:
+    "https://maps.google.com/maps?q=26.882607,75.765392&output=embed",
   mapLink:
-    "https://maps.google.com/?q=R-3-50+North+Part+Indraprasth+Colony+Sodala+Jaipur",
+    "https://maps.google.com/maps?q=26.882607,75.765392",
   mapButtonText: "View on Google Maps",
 } as const;

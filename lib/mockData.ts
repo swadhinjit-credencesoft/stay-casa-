@@ -96,7 +96,7 @@ export const roomsSuites: RoomSuite[] = [
     description: "Our Deluxe Room offers a perfect blend of comfort and functionality. Featuring a spacious layout with a king-sized bed, modern amenities, and thoughtful touches throughout. Ideal for business travelers and couples seeking a comfortable stay.",
     size: 120,
     occupancy: 2,
-    price: 1800,
+    price: 1350,
     images: [
       "/DSC_3793.JPG.avif",
       "/DSC_3796.JPG.avif"
@@ -128,7 +128,7 @@ export const roomsSuites: RoomSuite[] = [
     description: "The Super Deluxe Room elevates your stay with additional space and enhanced amenities. Enjoy the comfort of a king-sized bed, modern bathroom facilities, and all the essentials for a memorable stay. Perfect for those who appreciate the finer details.",
     size: 120,
     occupancy: 2,
-    price: 2100,
+    price: 1650,
     images: [
       "/DSC_3745.avif",
       "/DSC_3742.avif"
@@ -160,7 +160,7 @@ export const roomsSuites: RoomSuite[] = [
     description: "Our Suite Room offers generous living space with a separate sleeping area featuring a king-sized bed. With additional legroom, premium amenities, and thoughtful detailing, it is designed for guests who desire more space and comfort during their stay.",
     size: 140,
     occupancy: 2,
-    price: 2400,
+    price: 2050,
     images: [
       "/DSC_3721.avif",
       "/DSC_3709.avif"

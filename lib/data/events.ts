@@ -14,7 +14,7 @@ export const heroContent = {
 export const introContent = {
   tag: "Perfect Setting for Every Occasion",
   title: "Every Special Occasion Deserves a Perfect Setting",
-  description: 'Located in the peaceful surroundings of Indraprasth Colony, Chordia City, Jaipur, Stay Casa Inn offers a comfortable and convenient venue for intimate events and gatherings. Our team is dedicated to ensuring every event is organized smoothly, allowing you to focus on enjoying the occasion with your guests.',
+  description: 'Located in the peaceful surroundings of Indraprasth Colony Chordia City, Keshopura, Jaipur, Stay Casa Inn offers a comfortable and convenient venue for intimate events and gatherings. Our team is dedicated to ensuring every event is organized smoothly, allowing you to focus on enjoying the occasion with your guests.',
 } as const;
 
 export const eventTypes = [

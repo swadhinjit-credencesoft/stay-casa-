@@ -13,15 +13,15 @@ export const metadata: Metadata = {
     default: "Hotel Stay Casa Inn – Comfortable Stay in Jaipur",
   },
   description:
-    "Book Hotel Stay Casa Inn in Sodala, Jaipur. Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality at affordable rates. Perfect for business and leisure travelers.",
+    "Book Hotel Stay Casa Inn in Shyam Nagar, Jaipur. Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality at affordable rates. Perfect for business and leisure travelers.",
   keywords: [
     "hotel in jaipur",
     "stay casa inn",
     "budget hotel jaipur",
     "hotel near jaipur airport",
-    "rooms in sodala jaipur",
+    "rooms in shyam nagar jaipur",
     "best hotel jaipur",
-    "stay casa inn sodala",
+    "stay casa inn shyam nagar",
     "accommodation jaipur",
     "hotel booking jaipur",
     "comfortable stay jaipur",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Hotel Stay Casa Inn",
     title: "Hotel Stay Casa Inn – Comfortable Stay in Jaipur",
     description:
-      "Comfortable rooms, free Wi-Fi, and warm hospitality in Sodala, Jaipur. Book your stay today.",
+      "Comfortable rooms, free Wi-Fi, and warm hospitality in Shyam Nagar, Jaipur. Book your stay today.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",

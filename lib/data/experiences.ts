@@ -5,7 +5,7 @@ export const expHero = {
   tag: "Guest Experience",
   title: "Experience Comfort, Convenience & Warm Hospitality",
   description:
-    "At Stay Casa Inn Jaipur, every guest is welcomed with comfort, cleanliness, and personalized service. Located in the heart of Jaipur's Sodala area, our hotel is designed to provide a relaxing and hassle-free stay for business travelers, families, couples, and solo explorers.",
+    "At Stay Casa Inn Jaipur, every guest is welcomed with comfort, cleanliness, and personalized service. Located in the heart of the Keshopura locality, our hotel is designed to provide a relaxing and hassle-free stay for business travelers, families, couples, and solo explorers.",
 } as const;
 
 export const expComfortStay = {
@@ -16,7 +16,7 @@ export const expComfortStay = {
     "Our dedicated team takes pride in delivering warm Rajasthani hospitality. Guests frequently appreciate our courteous staff, quick service, and commitment to making every stay enjoyable and memorable.",
   ],
   image: "/DSC_3823.JPG.avif",
-  badge: { title: "Prime", description: "Location in Sodala" },
+  badge: { title: "Prime", description: "Location in Keshopura" },
 } as const;
 
 export const expLocation = {

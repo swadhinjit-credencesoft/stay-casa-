@@ -7,7 +7,7 @@ export function getHotelSchema() {
     "@context": "https://schema.org",
     "@type": "Hotel",
     "name": "Hotel Stay Casa Inn",
-    "description": "Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality in Sodala, Jaipur at affordable rates.",
+    "description": "Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality in Shyam Nagar, Jaipur at affordable rates.",
     "url": SITE,
     "telephone": "+919773302154",
     "logo": `${SITE}/stay-casa-logo.png`,
@@ -16,7 +16,7 @@ export function getHotelSchema() {
     ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "R-3-50 North Part, Indraprasth Colony, Chordia City, Sodala",
+      "streetAddress": "R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura, Jaipur, Rajasthan 302019",
       "addressLocality": "Jaipur",
       "addressRegion": "Rajasthan",
       "postalCode": "302019",
@@ -24,8 +24,8 @@ export function getHotelSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "26.8756",
-      "longitude": "75.7653"
+      "latitude": "26.882607",
+      "longitude": "75.765392"
     },
     "priceRange": "₹1800 - ₹3500",
     "amenityFeature": [

@@ -139,7 +139,7 @@ export default function CinematicHero() {
               </svg>
             ))}
           </div>
-          <span className="text-[10px] text-white/70 tracking-wider font-medium">Top Rated in Sodala</span>
+          <span className="text-[10px] text-white/70 tracking-wider font-medium">Top Rated in Keshopura</span>
         </motion.div>
 
         {/* CTA Buttons */}

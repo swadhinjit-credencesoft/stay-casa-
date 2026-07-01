@@ -124,7 +124,7 @@ export default function Header() {
             {/* Background elements */}
             <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#EF4444_1px,transparent_1px)] [background-size:24px_24px]" />
 
-            <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-24">
+            <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-16 lg:mt-24">
               
               {/* Left Column: Brand Context / Concierge */}
               <div className="col-span-1 lg:col-span-5 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-neutral-800 pb-8 lg:pb-0 lg:pr-12">
@@ -140,7 +140,7 @@ export default function Header() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3 text-neutral-400">
                     <Phone className="w-4 h-4 text-red-500" />
-                    <span className="text-sm tracking-wider">+1 800 STAY CASA</span>
+                     <span className="text-sm tracking-wider">+91 9773 30 21 54</span>
                   </div>
                   <div className="flex items-center space-x-3 text-neutral-400">
                     <Calendar className="w-4 h-4 text-red-500" />

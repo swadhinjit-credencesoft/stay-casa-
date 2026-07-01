@@ -15,7 +15,7 @@ import HomeBookingCta from "@/components/home/HomeBookingCta";
 export const metadata: Metadata = {
   title: "Hotel Stay Casa Inn – Comfortable Stay in Jaipur",
   description:
-    "Experience comfort, warm hospitality, and modern amenities at Stay Casa Inn Jaipur. Well-furnished rooms, free Wi-Fi, and a prime location in Sodala.",
+    "Experience comfort, warm hospitality, and modern amenities at Stay Casa Inn Jaipur. Well-furnished rooms, free Wi-Fi, and a prime location in Shyam Nagar.",
 };
 
 export default function HomePage() {
