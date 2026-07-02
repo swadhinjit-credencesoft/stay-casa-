@@ -46,7 +46,7 @@ export const aboutUsData = {
   tag: "About Stay Casa Inn",
   heading: "Your Comfortable Home Away from Home",
   paragraphs: [
-    "Welcome to Stay Casa Inn, a welcoming haven in the heart of Jaipur. Situated in the Keshopura locality near Shyam Nagar, our hotel blends modern comfort with warm Rajasthani hospitality. Whether visiting for business or leisure, we ensure a peaceful and relaxing stay with thoughtfully designed rooms, essential amenities, and personalized service.",
+    "Welcome to Stay Casa Inn, a welcoming haven in the heart of Jaipur. Situated on New Sanganer Road in Sodala, our hotel blends modern comfort with warm Rajasthani hospitality. Whether visiting for business or leisure, we ensure a peaceful and relaxing stay with thoughtfully designed rooms, essential amenities, and personalized service.",
   ],
   mission: {
     label: "Mission",
@@ -58,8 +58,8 @@ export const aboutUsData = {
   },
   imageUrl: "/home2.jpeg",
   address: {
-    line1: "R-3-50 North Part",
-    line2: "Indraprasth Colony Chordia City, Keshopura",
+    line1: "112, New Sanganer Rd",
+    line2: "Katewa Nagar, Sodala, Jaipur",
   },
 };
 
@@ -78,12 +78,12 @@ export const locationData = {
   tag: "Prime Location",
   heading: "Your Home in Jaipur",
   description:
-    "Conveniently situated in the Keshopura locality — close to Jaipur International Airport, railway station, shopping centers, and major attractions.",
+    "Conveniently situated on New Sanganer Road, Sodala — close to Jaipur International Airport, railway station, shopping centers, and major attractions.",
   image: "/DSC_3817.JPG.avif",
   address: [
-    { value: "R-3-50", label: "North Part" },
-    { value: "Indraprasth", label: "Colony" },
-    { value: "Chordia", label: "City, Keshopura" },
+    { value: "112, New", label: "Sanganer Rd" },
+    { value: "Katewa", label: "Nagar, Sodala" },
+    { value: "Gurjar Ki", label: "Thadi, Jaipur" },
   ],
 };
 
@@ -97,7 +97,7 @@ export const guestExperienceData = {
       tag: "Prime Location",
       title: "Conveniently Situated",
       description:
-        "Located near Shyam Nagar, Jaipur — close to major attractions, shopping centers, and business hubs.",
+        "Located on New Sanganer Road, Sodala, Jaipur — close to major attractions, shopping centers, and business hubs.",
     },
     {
       tag: "Clean & Comfortable",

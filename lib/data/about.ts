@@ -5,13 +5,13 @@ import {
 
 export const aboutMetadata: Metadata = {
   title: "About Stay Casa Inn | Hotel in Jaipur",
-  description: "Discover Stay Casa Inn in Indraprasth Colony Chordia City, Keshopura, Jaipur — comfortable rooms, warm hospitality, and a peaceful location for business and leisure travelers.",
+  description: "Discover Stay Casa Inn on New Sanganer Road, Sodala, Jaipur — comfortable rooms, warm hospitality, and a peaceful location for business and leisure travelers.",
 };
 
 export const heroContent = {
   tag: "About Stay Casa Inn",
   title: "Your Comfortable Home Away from Home",
-  description: "Nestled in the peaceful surroundings of Indraprasth Colony Chordia City, Keshopura, Jaipur — offering the perfect balance of tranquility, convenience, and modern hospitality.",
+  description: "Nestled on New Sanganer Road in Sodala, Jaipur — offering the perfect balance of tranquility, convenience, and modern hospitality.",
   image: "/DSC_3833-HDR.jpg.avif",
   imageAlt: "Stay Casa Inn Jaipur",
 } as const;
@@ -20,14 +20,14 @@ export const welcomeContent = {
   tag: "Welcome to Stay Casa Inn",
   title: "Warm Hospitality in the Heart of Jaipur",
   paragraphs: [
-    'Welcome to <strong>Stay Casa Inn</strong>, your comfortable home away from home in the heart of Jaipur. Located at <strong>R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura, Jaipur</strong>, our property offers easy access to Jaipur&#39;s major attractions, commercial centers, shopping destinations, and transportation hubs while allowing guests to enjoy a calm and relaxing residential environment.',
+    'Welcome to <strong>Stay Casa Inn</strong>, your comfortable home away from home in the heart of Jaipur. Located at <strong>112, New Sanganer Rd, Katewa Nagar, Sodala, Gurjar Ki Thadi, Jaipur, Rajasthan 302006</strong>, our property offers easy access to Jaipur&#39;s major attractions, commercial centers, shopping destinations, and transportation hubs while allowing guests to enjoy a calm and relaxing residential environment.',
     'At Stay Casa Inn, we are committed to delivering a comfortable and memorable stay experience. Our thoughtfully designed rooms are equipped with modern amenities, including comfortable bedding, air conditioning, complimentary high-speed Wi-Fi, flat-screen televisions, and well-maintained private bathrooms.',
     'With facilities such as 24-hour front desk assistance, regular housekeeping, and secure premises, we strive to ensure a safe, hassle-free, and enjoyable experience for every guest. Whether you are traveling for business meetings, family vacations, sightseeing, or a short weekend getaway, our dedicated team is always ready to assist you.',
   ],
   image: "/DSC_3842-HDR.jpg.avif",
   imageAlt: "Hotel room",
-  pinLocation: "Indraprasth Colony",
-  pinSubLocation: "Chordia City, Jaipur",
+  pinLocation: "Sodala",
+  pinSubLocation: "Jaipur, Rajasthan",
 } as const;
 
 export const missionVisionContent = {
@@ -48,7 +48,7 @@ export const highlightsContent = {
   title: "Why Choose Stay Casa Inn?",
   items: [
     { icon: Home, title: "Comfortable & Well-Furnished Rooms", description: "Thoughtfully designed rooms with modern amenities for a relaxing stay." },
-    { icon: MapPin, title: "Peaceful & Secure Location", description: "Nestled in the tranquil Indraprasth Colony Chordia City, Keshopura, Jaipur." },
+    { icon: MapPin, title: "Peaceful & Secure Location", description: "Nestled on New Sanganer Road in Sodala, Jaipur." },
     { icon: Wifi, title: "Complimentary Wi-Fi Access", description: "Stay connected with high-speed internet throughout your visit." },
     { icon: Building2, title: "Air-Conditioned Accommodation", description: "Enjoy climate-controlled comfort in every room." },
     { icon: Clock, title: "24-Hour Guest Assistance", description: "Our front desk team is available around the clock to help you." },

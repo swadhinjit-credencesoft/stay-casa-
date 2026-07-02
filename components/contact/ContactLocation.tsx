@@ -31,11 +31,12 @@ export default function ContactLocation() {
             <iframe
               src={contactLocation.mapEmbedUrl}
               width="100%"
-              height="300"
+              height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              allow="geolocation *;"
               title="Hotel Stay Casa Inn location"
             />
           </div>

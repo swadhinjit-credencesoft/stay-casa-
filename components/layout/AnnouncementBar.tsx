@@ -7,7 +7,7 @@ import { BOOKING_ENGINE_URL } from "@/lib/bookone";
 const messages = [
   "✨ Book Direct for Best Rates Guaranteed",
   "🏨 Comfortable Rooms from ₹1,350/night",
-  "📍 Prime Location in Keshopura, Jaipur",
+  "📍 Prime Location in Sodala, Jaipur",
   "📶 Free High-Speed Wi-Fi in All Rooms",
 ];
 

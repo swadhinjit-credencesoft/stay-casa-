@@ -10,7 +10,7 @@ const waMsg =
   "\nHotel Name: Stay Casa Inn," +
   "\nProperty Id: 3576," +
   "\nexternalSite: WebSite," +
-  "\nAddress: R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura, Jaipur";
+  "\nAddress: 112, New Sanganer Rd, Katewa Nagar, Sodala, Gurjar Ki Thadi, Jaipur, Rajasthan 302006";
 const waUrl = "https://api.whatsapp.com/send?phone=9773302154&text=" + encodeURIComponent(waMsg);
 
 const actions = [

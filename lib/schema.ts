@@ -7,7 +7,7 @@ export function getHotelSchema() {
     "@context": "https://schema.org",
     "@type": "Hotel",
     "name": "Hotel Stay Casa Inn",
-    "description": "Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality in Shyam Nagar, Jaipur at affordable rates.",
+    "description": "Comfortable rooms, free Wi-Fi, air conditioning, and warm hospitality in Sodala, Jaipur at affordable rates.",
     "url": SITE,
     "telephone": "+919773302154",
     "logo": `${SITE}/stay-casa-logo.png`,
@@ -16,10 +16,10 @@ export function getHotelSchema() {
     ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura, Jaipur, Rajasthan 302019",
+      "streetAddress": "112, New Sanganer Rd, Katewa Nagar, Sodala, Gurjar Ki Thadi, Jaipur, Rajasthan 302006",
       "addressLocality": "Jaipur",
       "addressRegion": "Rajasthan",
-      "postalCode": "302019",
+      "postalCode": "302006",
       "addressCountry": "IN"
     },
     "geo": {

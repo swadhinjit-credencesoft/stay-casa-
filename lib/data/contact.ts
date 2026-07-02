@@ -19,7 +19,7 @@ export const contactInfo = [
   },
   {
     label: "Address",
-    value: "R-3-50 North Part, Indraprasth Colony Chordia City, Keshopura",
+    value: "112, New Sanganer Rd, Katewa Nagar, Sodala, Gurjar Ki Thadi, Jaipur, Rajasthan 302006",
     href: "https://maps.google.com",
   },
 ];
@@ -28,19 +28,19 @@ export const contactWhatsApp = {
   title: "Chat on WhatsApp",
   description: "Average response under 3 minutes for urgent enquiries",
   buttonText: "Open WhatsApp",
-  link: "https://api.whatsapp.com/send?phone=9773302154&text=This%20is%20an%20Enquiry%20from%20%3A%20The%20HotelMate%20Website%0AHotel%20Name%3A%20Stay%20Casa%20Inn%2C%0AProperty%20Id%3A%203576%2C%0AexternalSite%3A%20WebSite%2C%0AAddress%3A%20R-3-50%20North%20Part%2C%20Indraprasth%20Colony%20Chordia%20City%2C%20Keshopura%2C%20Jaipur",
+  link: "https://api.whatsapp.com/send?phone=9773302154&text=This%20is%20an%20Enquiry%20from%20%3A%20The%20HotelMate%20Website%0AHotel%20Name%3A%20Stay%20Casa%20Inn%2C%0AProperty%20Id%3A%203576%2C%0AexternalSite%3A%20WebSite%2C%0AAddress%3A%20112%2C%20New%20Sanganer%20Rd%2C%20Katewa%20Nagar%2C%20Sodala%2C%20Gurjar%20Ki%20Thadi%2C%20Jaipur%2C%20Rajasthan%20302006",
 } as const;
 
 export const contactLocation = {
   sectionTag: "Find Us",
   sectionTitle: "Our Location",
   lines: [
-    "R-3-50 North Part",
-    "Indraprasth Colony Chordia City",
-    "Keshopura, Jaipur",
+    "112, New Sanganer Rd",
+    "Katewa Nagar, Sodala",
+    "Gurjar Ki Thadi, Jaipur, Rajasthan 302006",
   ],
   mapEmbedUrl:
-    "https://maps.google.com/maps?q=26.882607,75.765392&output=embed",
+    "https://maps.google.com/maps?q=26.882607,75.765392&t=k&z=19&output=embed",
   mapLink:
     "https://maps.google.com/maps?q=26.882607,75.765392",
   mapButtonText: "View on Google Maps",

@@ -234,7 +234,7 @@ export const touristHeroData = {
   title: "Explore Jaipur",
   subtitle: "Discover the Pink City&apos;s most iconic attractions — all within easy reach from Stay Casa Inn.",
   badges: [
-    { icon: "MapPin", label: "Keshopura, Jaipur" },
+    { icon: "MapPin", label: "Sodala, Jaipur" },
     { icon: "Star", label: "Top-rated experiences" },
     { icon: "Clock", label: "3–30 min from hotel" },
   ],

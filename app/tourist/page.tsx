@@ -8,7 +8,7 @@ import BookingCTA from "@/components/tourist/BookingCTA";
 
 export const metadata: Metadata = {
   title: "Nearby Tourist Attractions | Stay Casa Inn",
-  description: "Explore top tourist attractions near Stay Casa Inn in Shyam Nagar, Jaipur — Amber Palace, Hawa Mahal, City Palace, Jantar Mantar, and more.",
+  description: "Explore top tourist attractions near Stay Casa Inn in Sodala, Jaipur — Amber Palace, Hawa Mahal, City Palace, Jantar Mantar, and more.",
 };
 
 export default function TouristPage() {
