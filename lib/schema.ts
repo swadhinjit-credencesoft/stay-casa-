@@ -24,8 +24,8 @@ export function getHotelSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "26.882607",
-      "longitude": "75.765392"
+      "latitude": "26.882542",
+      "longitude": "75.765335"
     },
     "priceRange": "₹1800 - ₹3500",
     "amenityFeature": [

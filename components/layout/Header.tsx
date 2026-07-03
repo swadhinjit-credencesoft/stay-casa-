@@ -13,9 +13,10 @@ const navLinks = [
   // { name: "Dining", href: "/dining" },
   // { name: "events", href: "/events" },
   { name: "gallery", href: "/gallery" },
+  { name: "tourist", href: "/tourist" },
   { name: "about", href: "/about" },
   { name: "contact", href: "/contact" },
-  { name: "tourist", href: "/tourist" },
+  
 ];
 
 const fullscreenLinks = [

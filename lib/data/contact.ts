@@ -39,9 +39,11 @@ export const contactLocation = {
     "Katewa Nagar, Sodala",
     "Gurjar Ki Thadi, Jaipur, Rajasthan 302006",
   ],
+  streetViewThumb:
+    "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?cb_client=maps_sv.tactile&w=1200&h=800&panoid=QI1hRbaqyI3-IhFlEhPYQQ&yaw=96.87&pitch=5.5",
   mapEmbedUrl:
-    "https://maps.google.com/maps?q=26.882607,75.765392&t=k&z=19&output=embed",
+    "https://maps.google.com/maps?q=26.8825417,75.7653348&z=19&output=embed",
   mapLink:
-    "https://maps.google.com/maps?q=26.882607,75.765392",
-  mapButtonText: "View on Google Maps",
+    "https://www.google.com/maps/@26.8825417,75.7653348,3a,39.4y,96.87h,84.49t/data=!3m7!1e1!3m5!1sQI1hRbaqyI3-IhFlEhPYQQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D5.512495506024763%26panoid%3DQI1hRbaqyI3-IhFlEhPYQQ%26yaw%3D96.86599549128485!7i16384!8i8192",
+  mapButtonText: "Explore 360° Street View",
 } as const;
