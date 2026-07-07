@@ -100,7 +100,7 @@ export default function FloatingBooking() {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 20 }}
-                  className="bg-red-600 text-white text-xs font-bold tracking-[0.2em] uppercase px-5 py-3 rounded-full shadow-2xl border border-red-400/30"
+                  className="bg-gradient-to-r from-red-500 to-red-700 text-white text-xs font-bold tracking-[0.2em] uppercase px-6 py-3 rounded-full shadow-2xl shadow-red-600/40 border border-white/10"
                 >
                   Book Now
                 </motion.span>

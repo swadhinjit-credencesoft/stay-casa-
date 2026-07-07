@@ -31,14 +31,14 @@ export default function HomeBookingCta() {
               href={BOOKING_ENGINE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-sm text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_40px_rgba(239,68,68,0.4)]"
+              className="group inline-flex items-center gap-2.5 bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 text-white px-10 py-4.5 rounded-full text-xs font-bold tracking-widest uppercase shadow-2xl shadow-red-600/30 hover:shadow-red-600/60 hover:scale-105 transition-all duration-300"
             >
               Book Now
-              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/60 text-white/80 hover:text-white px-10 py-4 rounded-sm text-xs font-semibold tracking-widest uppercase transition-all duration-300"
+              className="group inline-flex items-center gap-2.5 border border-white/30 hover:border-red-500/60 text-white/80 hover:text-white px-9 py-4.5 rounded-full text-xs font-semibold tracking-widest uppercase backdrop-blur-sm hover:bg-white/5 hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Contact Us
             </Link>

@@ -95,7 +95,7 @@ export default function Header() {
               href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
               target="_blank"
               rel="noopener noreferrer"
-              className={cn("hidden sm:flex items-center space-x-2 border px-5 py-2.5 rounded-sm transition-all duration-300 text-xs font-semibold tracking-widest uppercase", scrolled ? "border-neutral-300 hover:border-red-600 hover:bg-red-600 hover:text-white text-neutral-800" : "border-white/30 hover:border-white text-white")}
+              className="hidden sm:inline-flex items-center gap-2.5 bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 text-white px-6 py-3 rounded-full text-xs font-bold tracking-widest uppercase shadow-lg shadow-red-600/20 hover:shadow-red-600/40 hover:scale-105 transition-all duration-300"
             >
               <Calendar className="w-3.5 h-3.5" />
               <span>Book Now</span>
@@ -152,7 +152,7 @@ export default function Header() {
                       href="https://bookone.io/Stay-Casa-Inn-Hotel?bookingEngine=true"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 text-xs font-semibold tracking-widest text-red-500 hover:text-red-400 uppercase transition-all"
+                      className="inline-flex items-center gap-2.5 bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 text-white px-7 py-3 rounded-full text-xs font-bold tracking-widest uppercase shadow-lg shadow-red-600/30 hover:shadow-red-600/50 hover:scale-105 transition-all duration-300"
                     >
                       <span>Book Now</span>
                       <ArrowRight className="w-4 h-4" />
