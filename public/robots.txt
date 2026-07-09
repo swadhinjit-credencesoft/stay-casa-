@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /out/
 
-Sitemap: https://luxury-resort-cinematic.vercel.app/sitemap.xml
+Sitemap: https://hotelstaycasainn.com/sitemap.xml

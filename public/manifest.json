@@ -1,7 +1,7 @@
 {
   "name": "Hotel Stay Casa Inn",
   "short_name": "Stay Casa Inn",
-  "description": "Ultra-luxury resort perched on volcanic Atlantic cliffs",
+  "description": "Comfortable rooms, free Wi-Fi, and warm hospitality in Sodala, Jaipur. Book your stay at Hotel Stay Casa Inn today.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a12",
@@ -11,6 +11,21 @@
       "src": "/favicon.ico",
       "sizes": "any",
       "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }

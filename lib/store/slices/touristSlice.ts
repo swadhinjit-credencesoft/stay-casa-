@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import type { Attraction } from "@/lib/tourist-data";
 import { attractions as allAttractions, experiences as allExperiences } from "@/lib/tourist-data";
 

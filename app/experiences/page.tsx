@@ -1,25 +1,27 @@
-"use client";
+import type { Metadata } from "next";
+import BreadcrumbsJsonLd from "@/components/seo/BreadcrumbsJsonLd";
+import ExperiencesClient from "@/components/experiences/ExperiencesClient";
 
-import ExpHero from "@/components/experiences/ExpHero";
-import ExpComfortStay from "@/components/experiences/ExpComfortStay";
-import ExpLocation from "@/components/experiences/ExpLocation";
-import ExpAmenities from "@/components/experiences/ExpAmenities";
-import ExpWhyChooseUs from "@/components/experiences/ExpWhyChooseUs";
-import ExpTestimonials from "@/components/experiences/ExpTestimonials";
-import ExpPerfectTraveler from "@/components/experiences/ExpPerfectTraveler";
-import ExpCta from "@/components/experiences/ExpCta";
+export const metadata: Metadata = {
+  title: "Guest Experiences | Hotel Stay Casa Inn, Jaipur",
+  description:
+    "Discover the Stay Casa Inn experience — comfortable rooms, warm hospitality, prime location in Sodala, Jaipur, and modern amenities for business and leisure travelers.",
+  alternates: {
+    canonical: "https://hotelstaycasainn.com/experiences",
+  },
+  openGraph: {
+    title: "Guest Experiences | Hotel Stay Casa Inn, Jaipur",
+    description:
+      "Comfort, convenience, and warm Rajasthani hospitality at Stay Casa Inn Jaipur.",
+    url: "https://hotelstaycasainn.com/experiences",
+  },
+};
 
 export default function ExperiencesPage() {
   return (
     <>
-      <ExpHero />
-      <ExpComfortStay />
-      <ExpLocation />
-      <ExpAmenities />
-      <ExpWhyChooseUs />
-      <ExpTestimonials />
-      <ExpPerfectTraveler />
-      <ExpCta />
+      <BreadcrumbsJsonLd items={[{ name: "Experiences", url: "/experiences" }]} />
+      <ExperiencesClient />
     </>
   );
 }

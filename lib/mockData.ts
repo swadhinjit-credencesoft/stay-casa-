@@ -39,16 +39,6 @@ export interface Restaurant {
   menuHighlights: { name: string; description: string; price?: string }[];
 }
 
-export interface SpaTreatment {
-  id: string;
-  name: string;
-  category: "treatments" | "rituals" | "packages";
-  duration: number; // minutes
-  price: number;
-  description: string;
-  benefits: string[];
-}
-
 export interface Offer {
   id: string;
   title: string;
@@ -299,51 +289,6 @@ export const restaurants: Restaurant[] = [
     menuHighlights: [
       { name: "Fermented Heirloom Tomato Gazpacho", description: "Dehydrated basil oil, frozen sour cream, wild flowers", price: "$28" },
       { name: "Salt-Baked Garden Celeriac", description: "Toasted hazelnut emulsion, watercress fluid gel, black truffle", price: "$38" }
-    ]
-  }
-];
-
-export const spaTreatments: SpaTreatment[] = [
-  {
-    id: "spa-volcanic-wrap",
-    name: "Volcanic Lava Ash Body Cocoon",
-    category: "treatments",
-    duration: 90,
-    price: 320,
-    description: "An intensive body treatment utilizing rich, mineral-laden ash from surrounding dormant volcanoes. Detoxifies, exfoliates, and re-mineralizes the skin, leaving it incredibly smooth and nourished.",
-    benefits: [
-      "Draws out deep-seated skin impurities",
-      "Increases blood circulation and lymph flow",
-      "Soothes muscle fatigue and joint stiffness",
-      "Nourishing volcanic clay moisturizing layer"
-    ]
-  },
-  {
-    id: "spa-sound-massage",
-    name: "Sound Healing Synchronized Abhyanga",
-    category: "rituals",
-    duration: 120,
-    price: 450,
-    description: "A synchronized four-hand Ayurvedic warm oil massage combined with vibrational therapy. As warm medicated oils are massaged into the body, tuning forks are placed on spinal energy nodes to realign kinetic pathways.",
-    benefits: [
-      "Rebalances nervous system and sleep cycles",
-      "Intense muscle tension relief",
-      "Restores natural energy alignment",
-      "Deep emotional and physical relaxation"
-    ]
-  },
-  {
-    id: "spa-couples-journey",
-    name: "The Celestial Canopy Couples Journey",
-    category: "packages",
-    duration: 180,
-    price: 980,
-    description: "Designed for couples, this journey begins in a private outdoor treehouse bath overlooking the forest. Followed by a custom deep tissue massage, a collagen facial, and concluded with organic berries and chilled crystal champagne.",
-    benefits: [
-      "Private outdoor infinity copper tub bath",
-      "Tailored deep-tissue full body massage",
-      "Botanical facial restoration treatment",
-      "Champagne, strawberries, and relaxation deck lounge access"
     ]
   }
 ];

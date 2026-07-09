@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getHotelSchema } from "@/lib/schema";
+import { getHotelSchema, getOrganizationSchema, getWebsiteSchema } from "@/lib/schema";
 import { CinematicHero } from "@/components/HomePageClient";
 import PhilosophyStrip from "@/components/home/PhilosophyStrip";
 import AboutUs from "@/components/home/AboutUs";
@@ -16,16 +16,43 @@ export const metadata: Metadata = {
   title: "Hotel Stay Casa Inn – Comfortable Stay in Jaipur",
   description:
     "Experience comfort, warm hospitality, and modern amenities at Stay Casa Inn Jaipur. Well-furnished rooms, free Wi-Fi, and a prime location in Sodala.",
+  alternates: {
+    canonical: "https://hotelstaycasainn.com",
+  },
+  openGraph: {
+    title: "Hotel Stay Casa Inn – Comfortable Stay in Jaipur",
+    description:
+      "Well-furnished rooms, free Wi-Fi, and warm hospitality at Stay Casa Inn in Sodala, Jaipur.",
+    url: "https://hotelstaycasainn.com",
+    images: [
+      {
+        url: "/DSC_3842-HDR.jpg.avif",
+        width: 1200,
+        height: 630,
+        alt: "Hotel Stay Casa Inn - Comfortable Hotel in Sodala, Jaipur",
+      },
+    ],
+  },
 };
 
 export default function HomePage() {
-  const schema = getHotelSchema();
+  const hotelSchema = getHotelSchema();
+  const orgSchema = getOrganizationSchema();
+  const webSchema = getWebsiteSchema();
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSchema) }}
       />
 
       <CinematicHero />

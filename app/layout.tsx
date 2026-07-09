@@ -1,10 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingBooking from "@/components/layout/FloatingBooking";
 import Providers from "@/components/Providers";
+
+export const viewport: Viewport = {
+  themeColor: "#EF4444",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hotelstaycasainn.com"),
@@ -36,10 +42,10 @@ export const metadata: Metadata = {
       "Comfortable rooms, free Wi-Fi, and warm hospitality in Sodala, Jaipur. Book your stay today.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
+        url: "/DSC_3842-HDR.jpg.avif",
         width: 1200,
         height: 630,
-        alt: "Hotel Stay Casa Inn",
+        alt: "Hotel Stay Casa Inn - Comfortable Hotel in Sodala, Jaipur",
       },
     ],
   },
@@ -47,13 +53,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hotel Stay Casa Inn",
     description: "Comfortable rooms and warm hospitality in Jaipur. Book now.",
-    images: [
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
-    ],
+    images: ["/DSC_3842-HDR.jpg.avif"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   manifest: "/manifest.json",
   icons: {

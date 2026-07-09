@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { ChevronDown, Calendar, Users, ArrowRight, ExternalLink } from "lucide-react";
@@ -44,19 +45,12 @@ export default function CinematicHero() {
     return () => clearInterval(interval);
   }, [phrases.length]);
 
-  const [checkIn, setCheckIn] = useState<Date | null>(null);
-  const [checkOut, setCheckOut] = useState<Date | null>(null);
+  const today = new Date();
+  const twoDaysLater = new Date();
+  twoDaysLater.setDate(today.getDate() + 2);
+  const [checkIn, setCheckIn] = useState<Date | null>(today);
+  const [checkOut, setCheckOut] = useState<Date | null>(twoDaysLater);
   const [guests, setGuests] = useState(2);
-
-  useEffect(() => {
-    if (!checkIn) {
-      const t = new Date();
-      const t2 = new Date();
-      t2.setDate(t.getDate() + 2);
-      setCheckIn(t);
-      setCheckOut(t2);
-    }
-  }, [checkIn]);
 
   const handleCheckRates = () => {
     if (!checkIn || !checkOut) return;
@@ -153,12 +147,12 @@ export default function CinematicHero() {
             Book Your Stay
             <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
           </a>
-          <a
+          <Link
             href="/rooms"
             className="group inline-flex items-center gap-2.5 border border-white/30 hover:border-red-500/60 text-white/80 hover:text-white px-9 py-4.5 rounded-full text-xs font-semibold tracking-widest uppercase backdrop-blur-sm hover:bg-white/5 hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
             Explore Suites
-          </a>
+          </Link>
         </motion.div>
 
         {/* Quick Booking Strip */}

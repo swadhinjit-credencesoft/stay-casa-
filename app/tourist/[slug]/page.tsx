@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { attractions, getAttractionBySlug } from "@/lib/tourist-data";
+import BreadcrumbsJsonLd from "@/components/seo/BreadcrumbsJsonLd";
 import AttractionHero from "@/components/tourist/AttractionHero";
 import AttractionContent from "@/components/tourist/AttractionContent";
 import VisitorSidebar from "@/components/tourist/VisitorSidebar";
@@ -18,8 +19,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const place = getAttractionBySlug(slug);
   if (!place) return {};
   return {
-    title: `${place.name} | Tourist Attractions | Stay Casa Inn`,
-    description: `${place.name} — ${place.description} Located ${place.distance} from Stay Casa Inn.`,
+    title: `${place.name} | Tourist Attractions Near Stay Casa Inn, Jaipur`,
+    description: `${place.name} — ${place.description} Located ${place.distance} from Stay Casa Inn, Sodala, Jaipur. Plan your visit with our complete guide.`,
+    alternates: {
+      canonical: `https://hotelstaycasainn.com/tourist/${place.slug}`,
+    },
+    openGraph: {
+      title: `${place.name} | Near Stay Casa Inn, Jaipur`,
+      description: `${place.description} Located ${place.distance} from Stay Casa Inn.`,
+      url: `https://hotelstaycasainn.com/tourist/${place.slug}`,
+      images: [{ url: place.image, alt: place.name }],
+    },
   };
 }
 
@@ -30,6 +40,10 @@ export default async function AttractionDetailPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbsJsonLd items={[
+        { name: "Tourist Attractions", url: "/tourist" },
+        { name: place.name, url: `/tourist/${place.slug}` },
+      ]} />
       <AttractionHero
         name={place.name}
         image={place.image}

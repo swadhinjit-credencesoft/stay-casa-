@@ -1,27 +1,27 @@
-"use client";
+import type { Metadata } from "next";
+import BreadcrumbsJsonLd from "@/components/seo/BreadcrumbsJsonLd";
+import DiningClient from "@/components/dining/DiningClient";
 
-import { useState } from "react";
-import { restaurants } from "@/lib/mockData";
-import DiningHero from "@/components/dining/DiningHero";
-import DiningTabs from "@/components/dining/DiningTabs";
-import DiningDetail from "@/components/dining/DiningDetail";
-import DiningReservation from "@/components/dining/DiningReservation";
+export const metadata: Metadata = {
+  title: "Dining & Restaurants | Hotel Stay Casa Inn, Jaipur",
+  description:
+    "Enjoy delicious meals at Hotel Stay Casa Inn, Jaipur. Explore our dining options, reserve a table, and savor authentic Rajasthani and multi-cuisine dishes.",
+  alternates: {
+    canonical: "https://hotelstaycasainn.com/dining",
+  },
+  openGraph: {
+    title: "Dining & Restaurants | Hotel Stay Casa Inn, Jaipur",
+    description:
+      "Explore dining options at Hotel Stay Casa Inn. Authentic cuisine and warm hospitality in Jaipur.",
+    url: "https://hotelstaycasainn.com/dining",
+  },
+};
 
 export default function DiningPage() {
-  const [activeTab, setActiveTab] = useState(restaurants[0].id);
-  const activeRestaurant =
-    restaurants.find((r) => r.id === activeTab) || restaurants[0];
-
   return (
     <>
-      <DiningHero />
-      <DiningTabs
-        restaurants={restaurants}
-        activeTab={activeTab}
-        onTabChange={setActiveTab}
-      />
-      <DiningDetail activeRestaurant={activeRestaurant} />
-      <DiningReservation />
+      <BreadcrumbsJsonLd items={[{ name: "Dining", url: "/dining" }]} />
+      <DiningClient />
     </>
   );
 }

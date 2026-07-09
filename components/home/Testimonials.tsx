@@ -23,7 +23,7 @@ export default function Testimonials() {
                     <Star key={si} className="w-3.5 h-3.5 fill-red-500 text-red-500" />
                   ))}
                 </div>
-                <p className="text-neutral-600 font-light leading-relaxed text-sm italic">"{t.quote}"</p>
+                <p className="text-neutral-600 font-light leading-relaxed text-sm italic">&ldquo;{t.quote}&rdquo;</p>
                 <div className="border-t border-neutral-100 pt-4 mt-auto">
                   <p className="font-medium text-neutral-900 text-sm">{t.name}</p>
                   <p className="text-xs text-neutral-400">{t.title}</p>

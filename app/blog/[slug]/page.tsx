@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Clock, ArrowLeft } from "lucide-react";
 import { blogArticles } from "@/lib/mockData";
 import { getArticleSchema } from "@/lib/schema";
+import BreadcrumbsJsonLd from "@/components/seo/BreadcrumbsJsonLd";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 
 interface Props {
@@ -21,7 +22,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.summary,
-    openGraph: { images: [article.image] },
+    alternates: {
+      canonical: `https://hotelstaycasainn.com/blog/${article.slug}`,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.summary,
+      url: `https://hotelstaycasainn.com/blog/${article.slug}`,
+      type: "article",
+      publishedTime: article.publishedAt,
+      authors: [article.author.name],
+      images: [{ url: article.image, alt: article.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.summary,
+      images: [article.image],
+    },
   };
 }
 
@@ -49,6 +67,10 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbsJsonLd items={[
+        { name: "Blog", url: "/blog" },
+        { name: article.title, url: `/blog/${article.slug}` },
+      ]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* Hero Image */}

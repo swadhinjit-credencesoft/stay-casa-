@@ -9,7 +9,6 @@ export function buildBookingUrl(checkIn: Date, checkOut: Date, adults: number): 
   const coDay = checkOut.getDate();
   const coMonth = checkOut.getMonth() + 1;
   const coYear = checkOut.getFullYear();
-  const ciStr = `${ciYear}-${String(ciMonth).padStart(2, "0")}-${String(ciDay).padStart(2, "0")}`;
   const coStr = `${coYear}-${String(coMonth).padStart(2, "0")}-${String(coDay).padStart(2, "0")}`;
   const nights = Math.max(1, Math.ceil((checkOut.getTime() - checkIn.getTime()) / 86400000));
 

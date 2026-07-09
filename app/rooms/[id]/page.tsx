@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { roomsSuites } from "@/lib/mockData";
 import { getRoomSchema } from "@/lib/schema";
+import BreadcrumbsJsonLd from "@/components/seo/BreadcrumbsJsonLd";
 import RoomDetailHero from "@/components/rooms/RoomDetailHero";
 import RoomDetailGallery from "@/components/rooms/RoomDetailGallery";
 import RoomDetailContent from "@/components/rooms/RoomDetailContent";
@@ -19,10 +20,19 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const room = roomsSuites.find((r) => r.slug === id);
-  if (!room) return { title: "Suite Not Found" };
+  if (!room) return { title: "Room Not Found" };
   return {
-    title: room.name,
-    description: room.description,
+    title: `${room.name} | Hotel Stay Casa Inn, Jaipur`,
+    description: `${room.description} Book the ${room.name} at Hotel Stay Casa Inn, Sodala, Jaipur. ${room.size} sq.ft, ${room.occupancy} guests, from ₹${room.price}/night.`,
+    alternates: {
+      canonical: `https://hotelstaycasainn.com/rooms/${room.slug}`,
+    },
+    openGraph: {
+      title: `${room.name} | Hotel Stay Casa Inn, Jaipur`,
+      description: room.description,
+      url: `https://hotelstaycasainn.com/rooms/${room.slug}`,
+      images: room.images.map((img) => ({ url: img, alt: room.name })),
+    },
   };
 }
 
@@ -36,6 +46,10 @@ export default async function RoomDetailPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbsJsonLd items={[
+        { name: "Rooms", url: "/rooms" },
+        { name: room.name, url: `/rooms/${room.slug}` },
+      ]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
